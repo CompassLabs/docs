@@ -6,22 +6,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Meet Dojo',
-  tagline: 'An On-chain Simulation Environment',
+  title: 'Dojo',
+  tagline: 'An end-to-end DeFi research platform.', //an end-to-end DeFi research platform
   favicon: 'img/compass_logo.svg',
 
   // Set the production url of your site here
   url: 'https://compasslabs.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'compasslabs', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -67,7 +67,7 @@ const config = {
         title: 'Dojo',
         logo: {
           alt: 'CompassLabs Logo',
-          src: 'img/compass_logo.svg',
+          src: 'https://compasslabs.ai/assets/images/image12.svg?v=4662781b',
         },
         items: [
           {
@@ -131,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Compass Labs. All rights reserved.`,
       },
       prism: {
         theme: lightCodeTheme,

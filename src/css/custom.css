@@ -37,3 +37,7 @@
   background: linear-gradient(90deg, #D9B2B2 0%, #96A9EB 100%)
 
 }
+
+.center {
+  text-align: center;
+}

@@ -2,20 +2,63 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Dojo Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's discover **Dojo in 3 simple steps**.
 
 ## Getting Started
 
-Get started by **creating a new site**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Licensing
+
+You will need a license key, to run dojo.
+To learn more abouyt plans and pricing click [here](https://www.TODO.com).
+
+However, to get started, you can generate a **[trial license](https://www.TODO.com)**.  
+The trial license comes with limitations and is only valid for one week on one machine, but it should be enough to get you excited about Dojo.🥳
+
+### Prerequisites
+There's a few more things you need to set up for Dojo. If you've done some coding in web3 before, chances are you're good to go already!
+
+1. RPC Node provider
+Setup and account with one of the provider, such as [Infura](https://www.infura.io/). You'll need the RPC_URL it provides. e.g. `https://mainnet.infura.io/v3/ac8ee<...>961`
+2. A local ethereum development environment. We suggest Hardhat.
+  `npm install --save-dev hardhat`
+
+### Start using Dojo
+
+#### 1. Install Dojo
+Dojo is provided as a Python package on Pypi.
+To install, simply run  
+```python3 -m pip install -i http://54.90.104.158:8080 dojo --trusted-host 54.90.104.158```
+
+
+#### 2. Setup Dojo configuration
+Create a `.env` file in your main directory.
+```md title=".env" {1-4}
+---
+RPC_URL=<YOUR URL>
+CHAIN=<chain> # one of ethereum, polygon
+LICENSE_KEY=<YOUR LICENSE KEY>
+---
+```
+
+#### Verify install
+if everything is set up correctly, the following command should throw no erros.
+```
+ python -c "import asda"
+```
+
+
+:::info
+**Congrats 🥳**. You'rve got everythin workign as expected. Let's get started using Dojo!
+:::
+
+
+<!-- 
+### Run our first simulation
 
 ## Generate a new site
 
@@ -44,4 +87,4 @@ The `cd` command changes the directory you're working with. In order to work wit
 
 The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes. -->
