@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/compass_logo.svg',
 
   // Set the production url of your site here
-  url: 'https://compasslabs.github.io/',
+  url: 'https://compasslabs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/docs',
@@ -20,8 +20,10 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'compasslabs', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
