@@ -1,17 +1,12 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+rohan:
+  name: Rohan Tabgri
+  title: CTO @ Compass Labs
+  url: https://www.linkedin.com/in/rohan-tangri/
+  image_url: https://compasslabs.ai/assets/images/image01.jpg?v=b2d33a4f
 
-yangshun:
+elisabeth:
   name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+  title: CEO @ Compass Labs
+  url: https://www.linkedin.com/in/elisabeth-duijnstee-9104b7124/
+  image_url: https://compasslabs.ai/assets/images/image03.jpg?v=b2d33a4f
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png

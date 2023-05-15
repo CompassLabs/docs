@@ -48,7 +48,7 @@ LICENSE_KEY=<YOUR LICENSE KEY>
 #### Verify install
 if everything is set up correctly, the following command should throw no erros.
 ```
- python -c "import asda"
+ python -c "import dojo"
 ```
 
 

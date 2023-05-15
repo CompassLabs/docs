@@ -1,12 +1,14 @@
 ---
-slug: first-blog-post
-title: First Blog Post
-authors:
-  name: Gao Wei
-  title: Docusaurus Core Team
-  url: https://github.com/wgao19
-  image_url: https://github.com/wgao19.png
-tags: [hola, docusaurus]
+slug: first-beta-launch
+title: First Beta launch !
+authors: elisabeth
+tags: [dojo, launch]
 ---
+
+We're exited to launch the first version of Dojo.
+
+We're still actiuvely developing the package, so don't expect it to be fully stable just yet.
+
+<!--truncate-->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet
