@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/data1.svg').default,
     description: (
       <>
-        Utilize Dojo’s on- and off-chain data capabilities for data ingestion and strategy evaluation.
+        Utilize dojo’s on- and off-chain data capabilities for data ingestion and strategy evaluation.
       </>
     ),
   },
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/simulation2.svg').default,
     description: (
       <>
-        Run strategies through Dojo’s agent-based simulator to simulate transactions at the EVM smart contract level.
+        Run strategies through dojo’s agent-based simulator to simulate transactions at the EVM smart contract level.
       </>
     ),
   },
@@ -66,7 +66,7 @@ export default function HomepageFeatures(): JSX.Element {
     <section className={styles.features}>
       <div className="container">
         {/* <div className="row, center">
-          Dojo, and end to end research platform
+          dojo, and end to end research platform
         </div>
         <div className="row, center">
           Designed to provide the infrastructure to scale research and productionisation DeFi strategies 

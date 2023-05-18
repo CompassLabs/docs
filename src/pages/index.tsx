@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/docs/intro">
-            Dojo Tutorial - Test your own strategy within 5min ⏱️
+            Test your own strategy within 5mins ⏱️
           </Link>
         </div>
       </div>

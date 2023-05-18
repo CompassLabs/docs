@@ -5,6 +5,6 @@ authors: [elisabeth, rohan]
 tags: [dojo, hello]
 ---
 
-we are exited to introduce Dojo!
+we are exited to introduce dojo!
 
 Stay tuned.

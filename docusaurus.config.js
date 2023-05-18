@@ -10,7 +10,7 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Dojo',
+  title: 'dojo',
   tagline: 'An end-to-end DeFi research platform.', //an end-to-end DeFi research platform
   favicon: 'img/compass_logo.svg',
 
@@ -82,7 +82,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/compass_logo.svg',
       navbar: {
-        title: 'Dojo',
+        title: 'dojo',
         logo: {
           alt: 'CompassLabs Logo',
           src: 'https://compasslabs.ai/assets/images/image12.svg?v=4662781b',

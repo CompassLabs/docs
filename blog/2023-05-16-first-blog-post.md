@@ -5,7 +5,7 @@ authors: elisabeth
 tags: [dojo, launch]
 ---
 
-We're exited to launch the first version of Dojo.
+We're exited to launch the first version of dojo.
 
 We're still actiuvely developing the package, so don't expect it to be fully stable just yet.
 
