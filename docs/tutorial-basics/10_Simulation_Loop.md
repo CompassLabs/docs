@@ -10,7 +10,7 @@ A quick overview of the main simulation loop. Broadly, `dojo` combines principle
 
 :::tip
 
-The general structure of Dojo is heavily inspired by OpenAI's gymnasium. Check out the [docs](https://gymnasium.farama.org/content/basic_usage/).
+The general structure of `dojo` is heavily inspired by OpenAI's gymnasium. Check out the [docs](https://gymnasium.farama.org/content/basic_usage/).
 
 :::
 
