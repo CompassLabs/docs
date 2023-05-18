@@ -32,7 +32,7 @@ You can imort this enviroment as
 from dojo.environments import UniV3Env
 ```
 
-:::note
+:::tip
 It is recommended to read the [whitepaper](https://uniswap.org/whitepaper-v3.pdf) if the concept of an automated market maker or conecentrated liquidity is unclear.
 :::
 

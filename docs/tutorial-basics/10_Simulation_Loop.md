@@ -32,7 +32,7 @@ Agents are NOT responsible for making decisions on how to act in the environment
 See [here](./agents) for more details.
 
 ## Policies
-This is where you can get creative. It is where your policy for interacting with the environmnet is implemented.  
+This is where you can get creative by implementing your own policy for interacting with the environmnet!  
 For example, a basic policy could be the [moving average trading strategy](https://www.investopedia.com/ask/answers/122314/how-do-i-use-moving-average-ma-create-forex-trading-strategy.asp).
 At every simulation step, the policy receives an observation from the environment, with which it generates an action to pass back. Optionally, it also receives a reward which can be used to train or fit a model contained within it.
 
