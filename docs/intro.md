@@ -2,59 +2,53 @@
 sidebar_position: 1
 ---
 
-# Dojo Intro
+# Intro to dojo
 
-Let's discover **Dojo in 3 simple steps**.
+Do you want to:
+- Test your existing DeFi strategies?
+- Optimize or train a new DeFi strategy?
+- Stress test your new DeFi smart contracts?
 
-## Getting Started
+Compass Labs has developed dojo, a DeFi simulation software with the goal of minimizing the [sim2real gap](https://developer.nvidia.com/blog/closing-the-sim2real-gap-with-nvidia-isaac-sim-and-nvidia-isaac-replicator/).
 
+## Features
 
+| **Features**                      | **dojo** |
+| ---------------------------       | ----------------------|
+| Runs at smart-contract level      | :white_check_mark: |
+| Runs locally on your machine      | :white_check_mark: |
+| Simple python interface           | :white_check_mark: |
+| UniswapV3 integration             | :white_check_mark: |
+| BalancerV2 integration            | :white_check_mark: |
+| Access to on-chain and CEX data   | :white_check_mark: |
+| Transaction ordering              | :white_check_mark: |
+| Market impact model               | :white_check_mark: |
+| Simulate on multiple protocols    | :eyes:             |
+| Simulate on multiple chains       | :eyes:             |
 
+#### Runs at smart-contract level
+To minimize the sim2real gap, dojo forks the actual blockchain and runs on the same smart contracts that would be run in real life. This means you don't need to worry about any potential bugs in your model of the protocol or whether you've missed any assumptions on how the protocol works. This also allows for the capture of micro-effects that could impact your simulation results; for example, how the protocol handles precision and rounding.
 
-### Licensing
+#### Runs locally on your machine
+Simulations with dojo run **fully locally** on your machine. No information about your strategies or simulations is shared with us (or with anyone else for that matter).
 
-You will need a license key, to run dojo.
-To learn more abouyt plans and pricing click [here](https://www.TODO.com).
+#### Simple python interface
+The dojo interface allows you to experiment with your strategies fully in python! This way, you can take advantage of the ecosystem with packages such as `numpy`, `numpyro` or `jax`.
 
-However, to get started, you can generate a **[trial license](https://www.TODO.com)**.  
-The trial license comes with limitations and is only valid for one week on one machine, but it should be enough to get you excited about Dojo.🥳
+#### Protocol integrations
+Currently, dojo integrates with UniswapV3 and BalancerV2.
 
-### Prerequisites
-There's a few more things you need to set up for Dojo. If you've done some coding in web3 before, chances are you're good to go already!
+#### Access to on-chain and CEX data
+No need to worry about getting your own data, dojo sources it's own on-chain data and, optionally, CEX price data (specifically from Binance right now).
 
-1. RPC Node provider
-Setup and account with one of the provider, such as [Infura](https://www.infura.io/). You'll need the RPC_URL it provides. e.g. `https://mainnet.infura.io/v3/ac8ee<...>961`
-2. A local ethereum development environment. We suggest Hardhat.
-  `npm install --save-dev hardhat`
+#### Transaction ordering
+You can edit the order in which transactions are executed directly, allowing you to simulate whatever MEV scenarios you can imagine! We'll soon be adding more support around this too, with models suggesting likelihoods for transaction ordering.
 
-### Start using Dojo
+#### Market impact model
+Simulate how the market might respond to your agent actions. With support from Seniror Fellows at the Alan Turing Institue, Imperial Collge London and the Oxford MAN Institute, dojo will have more complex models in the future too!
 
-#### 1. Install Dojo
-Dojo is provided as a Python package on Pypi.
-To install, simply run  
-```python3 -m pip install -i http://54.90.104.158:8080 dojo --trusted-host 54.90.104.158```
-
-
-#### 2. Setup Dojo configuration
-Create a `.env` file in your main directory.
-```md title=".env" {1-4}
----
-RPC_URL=<YOUR URL>
-CHAIN=<chain> # one of ethereum, polygon
-LICENSE_KEY=<YOUR LICENSE KEY>
----
-```
-
-#### Verify install
-if everything is set up correctly, the following command should throw no erros.
-```
- python -c "import dojo"
-```
-
-
-:::info
-**Congrats 🥳**. You'rve got everythin workign as expected. Let's get started using Dojo!
-:::
+#### Upcoming features
+Soon, dojo will allow you to simulate across multiple protocols and multiple chains simultaneously! 
 
 
 <!-- 
