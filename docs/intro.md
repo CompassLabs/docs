@@ -9,46 +9,37 @@ Do you want to:
 - Optimize or train a new DeFi strategy?
 - Stress test your new DeFi smart contracts?
 
-Compass Labs has developed dojo, a DeFi simulation software with the goal of minimizing the [sim2real gap](https://developer.nvidia.com/blog/closing-the-sim2real-gap-with-nvidia-isaac-sim-and-nvidia-isaac-replicator/).
+[Compass Labs](https://compasslabs.ai/) has developed `dojo`, an agent-based DeFi simulation software with the goal of minimizing the [sim2real gap](https://developer.nvidia.com/blog/closing-the-sim2real-gap-with-nvidia-isaac-sim-and-nvidia-isaac-replicator/).
 
 ## Features
 
-| **Features**                      | **dojo** |
-| ---------------------------       | ----------------------|
-| Runs at smart-contract level      | :white_check_mark: |
-| Runs locally on your machine      | :white_check_mark: |
-| Simple python interface           | :white_check_mark: |
-| UniswapV3 integration             | :white_check_mark: |
-| BalancerV2 integration            | :white_check_mark: |
-| Access to on-chain and CEX data   | :white_check_mark: |
-| Transaction ordering              | :white_check_mark: |
-| Market impact model               | :white_check_mark: |
-| Simulate on multiple protocols    | :eyes:             |
-| Simulate on multiple chains       | :eyes:             |
+### Runs at smart-contract level ✅
+`dojo` forks the actual blockchain and runs on the same smart contracts that would be run in real life. 
 
-#### Runs at smart-contract level
-To minimize the sim2real gap, dojo forks the actual blockchain and runs on the same smart contracts that would be run in real life. This means you don't need to worry about any potential bugs in your model of the protocol or whether you've missed any assumptions on how the protocol works. This also allows for the capture of micro-effects that could impact your simulation results; for example, how the protocol handles precision and rounding.
+This means you don't need to worry about any potential bugs in your model of the protocol or whether you've missed any assumptions on how the protocol works. This also allows for the capture of micro-effects that could impact your simulation results; for example, how the protocol handles precision and rounding.
 
-#### Runs locally on your machine
-Simulations with dojo run **fully locally** on your machine. No information about your strategies or simulations is shared with us (or with anyone else for that matter).
+### Runs locally on your machine ✅
+`dojo` runs **fully locally** on your machine. No information about your strategies or simulations is shared with us (or with anyone else for that matter).
 
-#### Simple python interface
-The dojo interface allows you to experiment with your strategies fully in python! This way, you can take advantage of the ecosystem with packages such as `numpy`, `numpyro` or `jax`.
+### Simple python interface ✅
+The `dojo` interface allows you to experiment with your strategies fully in python! This way, you can take advantage of the ecosystem with packages such as `numpy`, `numpyro` or `jax`.
 
-#### Protocol integrations
-Currently, dojo integrates with UniswapV3 and BalancerV2.
+### Protocol integrations ✅
+Currently, `dojo` integrates with UniswapV3 and BalancerV2, but we also have more integrations planned for the future!
 
-#### Access to on-chain and CEX data
-No need to worry about getting your own data, dojo sources it's own on-chain data and, optionally, CEX price data (specifically from Binance right now).
+### Access to on-chain and CEX data ✅
+No need to worry about getting your own data, `dojo` sources it's own on-chain data and, optionally, CEX price data (specifically from Binance right now).
 
-#### Transaction ordering
-You can edit the order in which transactions are executed directly, allowing you to simulate whatever MEV scenarios you can imagine! We'll soon be adding more support around this too, with models suggesting likelihoods for transaction ordering.
+### Transaction ordering ✅
+You can edit the order in which transactions are executed directly, allowing you to simulate whatever MEV scenarios you can imagine! In the future, `dojo` will also include  models suggesting likelihoods for transaction ordering.
 
-#### Market impact model
-Simulate how the market might respond to your agent actions. With support from Seniror Fellows at the Alan Turing Institue, Imperial Collge London and the Oxford MAN Institute, dojo will have more complex models in the future too!
+### Market impact model ✅
+Simulate how the market might respond to your agent actions. With support from Seniror Fellows at the Alan Turing Institue, Imperial Collge London and the Oxford MAN Institute, `dojo` will have more complex models as we progress!
 
-#### Upcoming features
-Soon, dojo will allow you to simulate across multiple protocols and multiple chains simultaneously! 
+### Upcoming features 👀
+Soon, `dojo` will allow you to:
+- Simulate across multiple protocols simultaneously
+- Simulate across multiple chains simultaneously
 
 
 <!-- 
