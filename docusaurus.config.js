@@ -18,7 +18,7 @@ const config = {
   url: 'https://compasslabs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs',
+  baseUrl: '/dojo',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -110,7 +110,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/intro',
               },
             ],
           },

@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/simulation2.svg').default,
     description: (
       <>
-        Run strategies through dojo’s agent-based simulator to simulate transactions at the EVM smart contract level.
+        Test and train strategies through dojo’s agent-based simulator to simulate transactions at the EVM smart contract level.
       </>
     ),
   },
