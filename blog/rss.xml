@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>dojo Blog</title>
-        <link>https://compasslabs.github.io/docs/blog</link>
+        <link>https://compasslabs.github.io/dojo/blog</link>
         <description>dojo Blog</description>
         <lastBuildDate>Tue, 16 May 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[First Beta launch !]]></title>
-            <link>https://compasslabs.github.io/docs/blog/first-beta-launch</link>
-            <guid>https://compasslabs.github.io/docs/blog/first-beta-launch</guid>
+            <link>https://compasslabs.github.io/dojo/blog/first-beta-launch</link>
+            <guid>https://compasslabs.github.io/dojo/blog/first-beta-launch</guid>
             <pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[We're exited to launch the first version of dojo.]]></description>
             <content:encoded><![CDATA[<p>We're exited to launch the first version of dojo.</p><p>We're still actiuvely developing the package, so don't expect it to be fully stable just yet.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
@@ -20,8 +20,8 @@
         </item>
         <item>
             <title><![CDATA[Welcome]]></title>
-            <link>https://compasslabs.github.io/docs/blog/welcome</link>
-            <guid>https://compasslabs.github.io/docs/blog/welcome</guid>
+            <link>https://compasslabs.github.io/dojo/blog/welcome</link>
+            <guid>https://compasslabs.github.io/dojo/blog/welcome</guid>
             <pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[we are exited to introduce dojo!]]></description>
             <content:encoded><![CDATA[<p>we are exited to introduce dojo!</p><p>Stay tuned.</p>]]></content:encoded>
