@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://compasslabs.github.io/docs/blog</id>
-    <title>Dojo Blog</title>
+    <title>dojo Blog</title>
     <updated>2023-05-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://compasslabs.github.io/docs/blog"/>
-    <subtitle>Dojo Blog</subtitle>
+    <subtitle>dojo Blog</subtitle>
     <icon>https://compasslabs.github.io/docs/img/compass_logo.svg</icon>
     <entry>
         <title type="html"><![CDATA[First Beta launch !]]></title>
         <id>https://compasslabs.github.io/docs/blog/first-beta-launch</id>
         <link href="https://compasslabs.github.io/docs/blog/first-beta-launch"/>
         <updated>2023-05-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We're exited to launch the first version of Dojo.]]></summary>
-        <content type="html"><![CDATA[<p>We're exited to launch the first version of Dojo.</p><p>We're still actiuvely developing the package, so don't expect it to be fully stable just yet.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <summary type="html"><![CDATA[We're exited to launch the first version of dojo.]]></summary>
+        <content type="html"><![CDATA[<p>We're exited to launch the first version of dojo.</p><p>We're still actiuvely developing the package, so don't expect it to be fully stable just yet.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
         <author>
             <name>Elisabeth Duijnstee</name>
             <uri>https://www.linkedin.com/in/elisabeth-duijnstee-9104b7124/</uri>
@@ -26,8 +26,8 @@
         <id>https://compasslabs.github.io/docs/blog/welcome</id>
         <link href="https://compasslabs.github.io/docs/blog/welcome"/>
         <updated>2023-05-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[we are exited to introduce Dojo!]]></summary>
-        <content type="html"><![CDATA[<p>we are exited to introduce Dojo!</p><p>Stay tuned.</p>]]></content>
+        <summary type="html"><![CDATA[we are exited to introduce dojo!]]></summary>
+        <content type="html"><![CDATA[<p>we are exited to introduce dojo!</p><p>Stay tuned.</p>]]></content>
         <author>
             <name>Elisabeth Duijnstee</name>
             <uri>https://www.linkedin.com/in/elisabeth-duijnstee-9104b7124/</uri>

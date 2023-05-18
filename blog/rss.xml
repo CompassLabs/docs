@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Dojo Blog</title>
+        <title>dojo Blog</title>
         <link>https://compasslabs.github.io/docs/blog</link>
-        <description>Dojo Blog</description>
+        <description>dojo Blog</description>
         <lastBuildDate>Tue, 16 May 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
@@ -13,8 +13,8 @@
             <link>https://compasslabs.github.io/docs/blog/first-beta-launch</link>
             <guid>https://compasslabs.github.io/docs/blog/first-beta-launch</guid>
             <pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[We're exited to launch the first version of Dojo.]]></description>
-            <content:encoded><![CDATA[<p>We're exited to launch the first version of Dojo.</p><p>We're still actiuvely developing the package, so don't expect it to be fully stable just yet.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
+            <description><![CDATA[We're exited to launch the first version of dojo.]]></description>
+            <content:encoded><![CDATA[<p>We're exited to launch the first version of dojo.</p><p>We're still actiuvely developing the package, so don't expect it to be fully stable just yet.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
             <category>dojo</category>
             <category>launch</category>
         </item>
@@ -23,8 +23,8 @@
             <link>https://compasslabs.github.io/docs/blog/welcome</link>
             <guid>https://compasslabs.github.io/docs/blog/welcome</guid>
             <pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[we are exited to introduce Dojo!]]></description>
-            <content:encoded><![CDATA[<p>we are exited to introduce Dojo!</p><p>Stay tuned.</p>]]></content:encoded>
+            <description><![CDATA[we are exited to introduce dojo!]]></description>
+            <content:encoded><![CDATA[<p>we are exited to introduce dojo!</p><p>Stay tuned.</p>]]></content:encoded>
             <category>dojo</category>
             <category>hello</category>
         </item>
