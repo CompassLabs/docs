@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://compasslabs.github.io/dojo/blog</id>
+    <id>https://compasslabs.github.io/docs/blog</id>
     <title>dojo Blog</title>
     <updated>2023-05-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://compasslabs.github.io/dojo/blog"/>
+    <link rel="alternate" href="https://compasslabs.github.io/docs/blog"/>
     <subtitle>dojo Blog</subtitle>
-    <icon>https://compasslabs.github.io/dojo/img/compass_logo.svg</icon>
+    <icon>https://compasslabs.github.io/docs/img/compass_logo.svg</icon>
     <entry>
         <title type="html"><![CDATA[First Beta launch !]]></title>
-        <id>https://compasslabs.github.io/dojo/blog/first-beta-launch</id>
-        <link href="https://compasslabs.github.io/dojo/blog/first-beta-launch"/>
+        <id>https://compasslabs.github.io/docs/blog/first-beta-launch</id>
+        <link href="https://compasslabs.github.io/docs/blog/first-beta-launch"/>
         <updated>2023-05-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We're exited to launch the first version of dojo.]]></summary>
         <content type="html"><![CDATA[<p>We're exited to launch the first version of dojo.</p><p>We're still actiuvely developing the package, so don't expect it to be fully stable just yet.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
@@ -23,8 +23,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://compasslabs.github.io/dojo/blog/welcome</id>
-        <link href="https://compasslabs.github.io/dojo/blog/welcome"/>
+        <id>https://compasslabs.github.io/docs/blog/welcome</id>
+        <link href="https://compasslabs.github.io/docs/blog/welcome"/>
         <updated>2023-05-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[we are exited to introduce dojo!]]></summary>
         <content type="html"><![CDATA[<p>we are exited to introduce dojo!</p><p>Stay tuned.</p>]]></content>

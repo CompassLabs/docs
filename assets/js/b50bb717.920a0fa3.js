@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_new=self.webpackChunkdocs_new||[]).push([[422],{5839:e=>{e.exports=JSON.parse('{"permalink":"/dojo/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

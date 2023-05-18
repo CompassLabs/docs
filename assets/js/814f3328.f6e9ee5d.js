@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_new=self.webpackChunkdocs_new||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"First Beta launch !","permalink":"/dojo/blog/first-beta-launch"},{"title":"Welcome","permalink":"/dojo/blog/welcome"}]}')}}]);
