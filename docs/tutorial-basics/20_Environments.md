@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Environments
 
-And intro into simulation environments.
+An intro to `dojo` simulation environments.
 
 ## Overview
 
-Enviroments in Dojo are reprensentations of different DeFi exchanges/protocols agents can interact with.
+Enviroments in `dojo` are reprensentations of different DeFi exchanges/protocols agents can interact with.
 We currently support
 - [UniswapV3](#uniswapv3)
 - [BalancerV2](#balancerv2)
@@ -17,7 +17,7 @@ We currently support
 Environments generally provide the following functionallity.
 
 - Move the simulation forward in time to the next block
-- Provide observations, which serve as input for your policy. Observations in `dojo` are classes that proivde read methods to the protocol.
+- Provide observations, which serve as input for the policies and agent rewards
 - Accept a list of actions, e.g. a trade, and execute them on the on-chain protocol
 
 To get the definition of an enviroments observation and action, you can run
@@ -38,10 +38,10 @@ It is recommended to read the [whitepaper](https://uniswap.org/whitepaper-v3.pdf
 
 ### Observation
 The `UniV3Obs` contains the following useful methods:
-- `block`: current block of the simulation.
-- `chain`: the chain the environment is running on.
-- `date`: current date of the simulation.
-- `pools`: pool addresses included in the simulation.
+- `block: int`: current block of the simulation.
+- `chain: str`: the chain the environment is running on.
+- `date: datetime`: current date of the simulation.
+- `pools: List[str]`: pool addresses included in the simulation.
 - `pool_tokens(pool: str) -> Tuple[str, str]`: get the symbols of the tokens in a pool.
 - `pool_positions(pool: str, owner: str, tick_lower: int, tick_upper: int) -> dict`: get the pool position of an owner in the specified tick range.
 - `nft_positions(token_id: int) -> dict`: get the LP position data of an LP NFT.
