@@ -14,16 +14,15 @@ We currently support
 - [BalancerV2](#balancerv3-environment)
 
 ## Functions
-Environments genreally provide the following functionallity.
+Environments generally provide the following functionallity.
 
-- Move the simulation forward in time/to the next block
-- Provide [observations](./basics#observations) which serve as input for your policy
-- Accept a list of actions, e.g. a trade, and execute them on the simulated exchange.
+- Move the simulation forward in time to the next block
+- Provide observations, which serve as input for your policy. Observations in `dojo` are classes that proivde read methods to the protocol.
+- Accept a list of actions, e.g. a trade, and execute them on the on-chain protocol
 
-To get the definition of an enviroments observation space, you can run
+To get the definition of an enviroments observation and action, you can run
 ```python
-from dojo.environments import UniV3Env
-UniV3Env.obhservation_space
+from dojo.environments.uniswapV3 import UniV3Obs, UniV3Action
 ```
 ---
 ## Currently supported environments
@@ -35,29 +34,32 @@ from dojo.environments import UniV3Env
 ```
 
 :::note
-UniswapV3 incorporates the concpet of [concentrated liquidity](TODO). In short, it means you can provide liquidity within certain price ranges, indicated via "ticks" `i`, where
-$$
-p(i) = 1.0001^i
-$$
+It is recommended to read the [whitepaper](https://uniswap.org/whitepaper-v3.pdf) if the concept of an automated market maker or conecentrated liquidity is unclear.
 :::
 
-All actions and observations are per tick-range in this environment.
 
-
-
-#### Actions
+#### Action Types
 - **TRADE**
   - Trading one token for another token, without changing your invested liquidity
 - **QUOTE**
   - Either providing or taking liquidity out of the pool
+- **COLLECT**
+  - Collect LP fees from an LP position
+- **SET_FEE_PROTOCOL**
+  - Set the protocol fee for the pool
 
 #### Observations
-The observations space of UniswapV3 contains the following variables
-- `real_quantities`: The real[^1] quantities for each token within each tick of every pool.
-- `virtual_quantities`: The virtual[^1] quantities for each token within each tick of every pool.
-- `lower_ticks`: For each pool, gives the lower boundaries of tick ranges. e.g. []  Ticks are spaced such that an increase or decrease of 1 tick represents a 0.01% increase or decrease in price at any point in price space.
-- `pool_fees`: The fees for all pools in the environment, represented as a number between `0.0` and `1.0`, e.g `[0.05, 0.01]`
-- `protocol_fees`: TODO
+The `UniV3Obs` contains the following useful methods:
+- `block`: current block of the simulation.
+- `chain`: the chain the environment is running on.
+- `date`: current date of the simulation.
+- `pools`: pool addresses included in the simulation.
+- `pool_tokens(pool: str) -> Tuple[str, str]`: get the symbols of the tokens in a pool.
+- `pool_positions(pool: str, owner: str, tick_lower: int, tick_upper: int) -> dict`: get the pool position of an owner in the specified tick range.
+- `nft_positions(token_id: int) -> dict`: get the LP position data of an LP NFT.
+- `get_tokens()`: get all the token symbols used in the environment.
+- `get_quantities(pool: str, num_ticks: int) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]`: get the real quantities, virtual quantities, liquidities and lower ticks of a pool over `num_ticks` ticks. The active tick is given by `num_ticks // 2`.
+
 
 [^1]: See here for the difference between real and virtual quantities.
 
@@ -81,14 +83,13 @@ The observations space of UniswapV3 contains the following variables
 ## Show me some code!
 Here's how to instatiate a UniswapV3 environment
 ```python
-from demo.agents import WealthAgent
 from dojo.environments import UniV3Env
+
+
 pools = ["0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8"]  # WETH/USDC
 
 env = UniV3Env(
     agents=[], #Of course, you'd want an agent here to actually do things
-    agent_params=agent_params,
     pools=pools,
-    num_ticks=1,
 )
 ```
