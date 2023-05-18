@@ -91,17 +91,15 @@ class DynamicPriceWindowPolicy(PriceWindowPolicy):
 
         new_return = spot_price / old_price
         returns.append(new_return)
-        vol = np.std(prices)
+        vol = np.std(self.returns)
         self.vols.append(vol)
-        vol_diff = self.vols[-1] / np.mean(self.vols)
+        vol_diff = vol / np.mean(self.vols)
         self.spread = self.spread * vol_diff
         self.lower_limit = max(0, self.center - (self.spread / 2))
         self.upper_limit = self.center + (self.spread / 2)
 ```
 
 Now, in the simulation loop, we can simply call the policy `fit()` method to calculate the new price limits ✅
-
----
 
 
 :::note
