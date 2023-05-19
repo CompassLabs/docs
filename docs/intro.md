@@ -36,10 +36,15 @@ You can edit the order in which transactions are executed directly, allowing you
 ### Market impact model ✅
 Simulate how the market might respond to your agent actions. With support from Seniror Fellows at the Alan Turing Institue, Imperial Collge London and the Oxford MAN Institute, `dojo` will have more complex models as we progress!
 
-### Upcoming features 👀
-Soon, `dojo` will allow you to:
-- Simulate across multiple protocols simultaneously
-- Simulate across multiple chains simultaneously
+### Multi protocol/chain simulations 👀
+Run simulations across multiple protocols/chains simultaneously.
+
+### Execution Environment 👀
+Because `dojo` [runs at the smart contract level](#runs-at-smart-contract-level-), your strategy can be easily ported from the `dojo` fork onto mainnet with zero modifications!
+
+### Upcoming integrations 👀
+- Polygon
+- Arbitrum
 
 
 <!-- 
