@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # Agents
@@ -41,15 +41,12 @@ Here is a super basic demo for creating your own agent, you just need to impleme
 from dojo.agents import BaseAgent
 from dojo.environments.uniswapV3 import UniV3Obs
 
-class TutorialUniV3Agent(BaseAgent):
+class WealthAgent(BaseAgent):
     def __init__(initial_portfolio: Portfolio = {"USDC": 10_000}) -> None:
         super().__init__(initial_portfolio=initial_portfolio)
 
     def reward(obs: UniV3Obs) -> float:
-        if self.wealth(obs.date) > 10_000:
-            return 1
-        else:
-            return -1
+        return self.wealth(obs.date)
 ```
 
 ---

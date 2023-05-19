@@ -1,0 +1,8 @@
+{
+  "label": "Environments",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "A guide to the `dojo` environments."
+  }
+}
