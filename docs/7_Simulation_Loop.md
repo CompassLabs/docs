@@ -36,9 +36,9 @@ blocks=[]
 rewards=[]
 obs = env.reset()
 for block in env.iter_block():
-    policy.fit(env.obs) # train dynamic policy
+    policy.fit(obs) # train dynamic policy
     actions = policy.predict(obs)
-    next_obs, rewards, dones, infos = env.step(actions=actions)
+    obs, rewards, dones, infos = env.step(actions=actions)
 
     blocks.append(block)
     rewards.append(reward)
