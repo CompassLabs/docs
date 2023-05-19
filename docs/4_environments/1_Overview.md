@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # Overview
 
-An intro to `dojo` simulation environments.
-
-## Overview
-
 Enviroments in `dojo` are reprensentations of different DeFi exchanges/protocols agents can interact with.
 We currently support
 - [UniswapV3](./UniswapV3)
