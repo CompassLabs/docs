@@ -13,38 +13,55 @@ Do you want to:
 
 ## Features
 
-### Runs at smart-contract level ✅
-`dojo` forks the actual blockchain and runs on the same smart contracts that would be run in real life. 
+### **Simplicity**
 
-This means you don't need to worry about any potential bugs in your model of the protocol or whether you've missed any assumptions on how the protocol works. This also allows for the capture of micro-effects that could impact your simulation results; for example, how the protocol handles precision and rounding.
-
-### Runs locally on your machine ✅
+-  **Runs locally on your machine ✅**  
 `dojo` runs **fully locally** on your machine. No information about your strategies or simulations is shared with us (or with anyone else for that matter).
 
-### Simple python interface ✅
+- Simple python interface ✅** 
 The `dojo` interface allows you to experiment with your strategies fully in python! This way, you can take advantage of the ecosystem with packages such as `numpy`, `numpyro` or `jax`.
 
-### Protocol integrations ✅
+
+### Realism
+
+
+-  **Protocol integrations ✅**  
 Currently, `dojo` integrates with UniswapV3 and BalancerV2, but we also have more integrations planned for the future!
 
-### Access to on-chain and CEX data ✅
+-  **Access to on-chain and CEX data ✅**   
 No need to worry about getting your own data, `dojo` sources it's own on-chain data and, optionally, CEX price data (specifically from Binance right now).
 
-### Transaction ordering ✅
+-  **Transaction ordering ✅**   
 You can edit the order in which transactions are executed directly, allowing you to simulate whatever MEV scenarios you can imagine! In the future, `dojo` will also include  models suggesting likelihoods for transaction ordering.
 
-### Market impact model ✅
+-  **Market impact model ✅**   
 Simulate how the market might respond to your agent actions. With support from Seniror Fellows at the Alan Turing Institue, Imperial Collge London and the Oxford MAN Institute, `dojo` will have more complex models as we progress!
 
-### Multi protocol/chain simulations 👀
+-  **Runs at smart-contract level ✅**  
+`dojo` forks the actual blockchain and runs on the same smart contracts that would be run in real life.  
+This means you don't need to worry about any potential bugs in your model of the protocol or whether you've missed any assumptions on how the protocol works. This also allows for the capture of micro-effects that could impact your simulation results; for example, how the protocol handles precision and rounding.
+
+
+
+
+
+
+
+### Featureful
+
+
+
+
+
+-  **Multi protocol/chain simulations 👀**  
 Run simulations across multiple protocols/chains simultaneously.
 
-### Execution Environment 👀
+-  **Execution Environment 👀**  
 Because `dojo` [runs at the smart contract level](#runs-at-smart-contract-level-), your strategy can be easily ported from the `dojo` fork onto mainnet with zero modifications!
 
-### Upcoming integrations 👀
-- Polygon
-- Arbitrum
+-  **Upcoming integrations 👀**   
+   - Polygon
+   - Arbitrum
 
 
 <!-- 
