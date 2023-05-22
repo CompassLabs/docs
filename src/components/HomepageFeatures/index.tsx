@@ -75,15 +75,15 @@ const PNGFeatureList: PNGFeatureItem[] = [
       </>
     ),
   },
-  {
-    title: 'Intelligence',
-    dest: require('@site/static/img/intelligence.png').default,
-    description: (
-      <>
-        Meet strategy goals through parameter optimization at every time step.
-      </>
-    ),
-  },
+  // {
+  //   title: 'Intelligence',
+  //   dest: require('@site/static/img/intelligence.png').default,
+  //   description: (
+  //     <>
+  //       Meet strategy goals through parameter optimization at every time step.
+  //     </>
+  //   ),
+  // },
   {
     title: 'Analysis',
     dest: require('@site/static/img/analysis.png').default,
@@ -101,7 +101,7 @@ const PNGFeatureList: PNGFeatureItem[] = [
 function Feature({title, Svg, description}: FeatureItem) {
   console.log(Svg);
   return (
-    <div className={clsx('col col--2')}>
+    <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
         {/* <Image
@@ -144,16 +144,26 @@ export default function HomepageFeatures(): JSX.Element {
         <div className="row, center">
           Designed to provide the infrastructure to scale research and productionisation DeFi strategies 
         </div> */}
+
+        {/* <div className="row">
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div> */}
+
+
         <div className="row">
-          {PNGFeatureList.slice(0,2).map((props, idx) => (
+          {PNGFeatureList.map((props, idx) => (
             <PNGFeature key={idx} {...props} />
           ))}
         </div>
-        <div className="row">
+        {/* <div className="row">
           {PNGFeatureList.slice(2,4).map((props, idx) => (
             <PNGFeature key={idx} {...props} />
           ))}
-        </div>
+        </div> */}
+
+
       </div>
     </section>
   );
