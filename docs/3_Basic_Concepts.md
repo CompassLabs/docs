@@ -2,17 +2,21 @@
 sidebar_position: 3
 ---
 
-# Basic Concepts
+# Basic concepts
+Dojo’s simulation loop combines principles from [reinforcement learning](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html#key-concepts-and-terminology) and [agent-based modelling](https://en.wikipedia.org/wiki/Agent-based_model). This flexible framework enables you to simulate and explore a diverse range of scenarios that reflect DeFi dynamics. 
 
-A quick overview of the main simulation loop. Broadly, `dojo` combines principles from [reinforcement learning](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html#key-concepts-and-terminology) and [agent-based modelling](https://en.wikipedia.org/wiki/Agent-based_model) to provide a flexible structure.
+```mermaid
+flowchart TD
+    Agent
+    Environment
+    Policy
 
-![Alt Text](../docs/.tutorial-extras/img/dojo-loop.png)
+    Policy --> |provide actions| Environment
+    Agent --> |read state| Environment
 
-:::tip
+    Environment --> | provide observations | Policy
+```
 
-The general structure of `dojo` is heavily inspired by OpenAI's gymnasium. Check out the [docs](https://gymnasium.farama.org/content/basic_usage/).
-
-:::
 
 ## Environments
 In the context of `dojo`, environments are DeFi protocols.

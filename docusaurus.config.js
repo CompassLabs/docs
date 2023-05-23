@@ -13,6 +13,10 @@ const config = {
   title: 'dojo',
   tagline: 'An end-to-end DeFi research platform.', //an end-to-end DeFi research platform
   favicon: 'img/compass_logo.svg',
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Set the production url of your site here
   url: 'https://compasslabs.github.io',
@@ -20,6 +24,8 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/docs',
 
+
+  
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'compasslabs', // Usually your GitHub org/user name.
