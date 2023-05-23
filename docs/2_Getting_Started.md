@@ -11,7 +11,7 @@ Let's discover `dojo` in **3 simple steps**.
 You will need a license key, to run `dojo`.
 To learn more abouyt plans and pricing click [here](https://www.TODO.com).
 
-However, to get started, you can generate a **[trial license](https://www.TODO.com)**.  
+However, to get started, you can request a **[trial license](mailto:elisabeth@compasslabs.ai?subject=Dojo%20trial%20license%20request&body=%3C%20Please%20let%20us%20know%20your%20name%20and%20the%20company%20you%20represent.%20We'll%20get%20back%20ASAP%20%3E)**.  
 The trial license comes with limitations and is only valid for one week on one machine, but it should be enough to get you excited about `dojo`.🥳
 
 ### Prerequisites
