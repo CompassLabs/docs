@@ -101,6 +101,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://readthedocs.compasslabs.ai',
+            label: 'Code reference',
+          }
         ],
       },
       footer: {
@@ -112,6 +116,10 @@ const config = {
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Code reference',
+                href: 'https://www.google.com',
               },
             ],
           },
@@ -160,3 +168,4 @@ const config = {
 };
 
 module.exports = config;
+
