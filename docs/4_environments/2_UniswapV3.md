@@ -12,31 +12,15 @@ from dojo.environments import UniV3Env
 It is recommended to read the [whitepaper](https://uniswap.org/whitepaper-v3.pdf) if the concept of an automated market maker or conecentrated liquidity is unclear.
 :::
 
-## Observation
-The `UniV3Obs` contains the following useful methods:
-- `block: int`: current block of the simulation.
-- `chain: str`: the chain the environment is running on.
-- `date: datetime`: current date of the simulation.
-- `pools: List[str]`: pool addresses included in the simulation.
-- `pool_tokens(pool: str) -> Tuple[str, str]`: get the symbols of the tokens in a pool.
-- `pool_positions(pool: str, owner: str, tick_lower: int, tick_upper: int) -> dict`: get the pool position of an owner in the specified tick range.
-- `nft_positions(token_id: int) -> dict`: get the LP position data of an LP NFT.
-- `get_tokens()`: get all the token symbols used in the environment.
-- `get_quantities(pool: str, num_ticks: int) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]`: get the real quantities, virtual quantities, liquidities and lower ticks of a pool over `num_ticks` ticks. The active tick is given by `num_ticks // 2`.
-- `get_price(self, token: str, unit: str, pool: str) -> float`: get the price of a token in a pool in the units of another token.
-- `get_pool_fee(self, pool: str) -> float` get a pool's trade fee.
-- `def get_protocol_fee(self, pool: str) -> np.ndarray` get a pool's protocol fee per token.
+## Observations
+Since UniswapV3 is based on tick ranges, many observations are on a per tick basis.  
 
-## Action
-The `UniV3Action` contains the following parameters:
-- `agent: BaseAgent`: the agent executing the transaction.
-- `type: Union[str, UniV3EventType]`: the action type, if a string can be one of 'trade', 'quote', 'collect' or 'set_fee_protocol'.
-- `pool: str`: pool address.
-- `quantities: np.ndarray`: quantities of tokens in action.
-- `tick_range: np.ndarray`: pool tick range of action, only needed for QUOTE and COLLECT.
-- `owner: str`: owner in solidity event, only needed for QUOTE.
+**Please refer to the [code reference](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Obs) for more details.**
 
-### Action Types
+## Actions
+
+In general, there are 3 actions you can perform on the Uniswap V3 environment:
+
 - **TRADE**
   - Trading one token for another token, without changing your invested liquidity
 - **QUOTE**
@@ -46,7 +30,10 @@ The `UniV3Action` contains the following parameters:
 - **SET_FEE_PROTOCOL**
   - Set the protocol fee for the pool
 
-## Show me the code!
+Please refer to the [code reference](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Action) for more details.
+
+___
+## Show me some code!
 
 ```python
 import numpy as np
