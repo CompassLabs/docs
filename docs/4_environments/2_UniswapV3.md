@@ -49,7 +49,7 @@ env = UniV3Env(
     agents=[], #Of course, you'd want an agent here to actually do things
     date_range=(sim_start, sim_end)
     pools=pools,
-    market_impact_model=None, # defaults to None, simply replaying history
+    market_impact="replay", # defaults to "replay", simply replaying history
 )
 
 obs = env.obs

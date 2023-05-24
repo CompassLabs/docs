@@ -6,8 +6,10 @@ sidebar_position: 7
 
 And to end, putting everything together in a simulation loop.
 
+![sim-loop](./.tutorial-extras/img/dojo-loop.png)
+
 The basic pattern is pretty simple:
-- the envrionment provides the simulation steps and emits the observation
+- the envrionment provides the simulation steps and emits the observation and agent rewards
 - the policy processes the observation and returns actions, e.g. trades
 - the environment executes the actions and the cycle repeats
 
@@ -26,7 +28,7 @@ env = UniV3Env(
     agents=[demo_agent],
     date_range=(sim_start, sim_end)
     pools=["0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8"],
-    marekt_impact_model=None, # "None" by default, can also be "arbitrage or others
+    market_impact="replay", # "replay" by default, to replay history
 )
 policy = DynamicPriceWindowPolicy(
     agent=demo_agent, lower_limit=2000, upper_limit=2500
@@ -37,7 +39,9 @@ rewards=[]
 obs = env.reset()
 for block in env.iter_block():
     policy.fit(obs) # train dynamic policy
-    actions = policy.predict(obs)
+    policy_actions = policy.predict(obs)
+    market_actions = env.market_actions(policy_actions)
+    actions = policy_actions + market_actions # control over action ordering
     obs, rewards, dones, infos = env.step(actions=actions)
 
     blocks.append(block)

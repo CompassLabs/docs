@@ -48,5 +48,5 @@ Transfer your strategy from the Dojo fork to mainnet without any modifications, 
 
 ___
 ## Protocol integrations
-Dojo currently integrates with **UniswapV3** on Ethereum. We are planning on adding BalancerV2 protocol and the Polygon chain next!  
+Dojo currently integrates with **UniswapV3** on **Ethereum**. We are planning on adding BalancerV2 protocol and the Polygon chain next!  
 If you want your chain or protocol to be integrated with Dojo, reach out! 
