@@ -84,9 +84,10 @@ sim_start = datetime(2023, 4, 29)
 sim_end = datetime(2023, 5, 10)
 
 env = UniV3Env(
-    date_range=(start_time, end_time),
-    agents=[],
-    pools=[pool],  # WETH/USDC
+    agents=[], #Of course, you'd want an agent here to actually do things
+    date_range=(sim_start, sim_end)
+    pools=pools,
+    market_impact="replay", # defaults to "replay", simply replaying history
 )
 
 action = UniV3Action(

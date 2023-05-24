@@ -39,7 +39,7 @@ ___
 ## Upcoming 
 ### Market impact model 👀
 Simulate the market's response to your agent actions. With support from Senior Fellows at the Alan Turing Institute, Imperial College London, and the Oxford MAN Institute, dojo will include more complex market scenario models.
-### MEV models
+### MEV models 👀
 Simulate block inclusion probability and transaction ordering
 ### Multi protocol/chain simulations 👀
  Conduct simulations across multiple protocols and chains simultaneously.
@@ -47,6 +47,6 @@ Simulate block inclusion probability and transaction ordering
 Transfer your strategy from the Dojo fork to mainnet without any modifications, since Dojo runs at the smart contract level. 
 
 ___
-### Protocol integrations
-Dojo currently integrates with **UniswapV3** and **BalancerV2** on Ethereum. We are soon enabling simulation on Polygon and Arbitrum.  
+## Protocol integrations
+Dojo currently integrates with **UniswapV3** on **Ethereum**. We are planning on adding BalancerV2 protocol and the Polygon chain next!  
 If you want your chain or protocol to be integrated with Dojo, reach out! 
