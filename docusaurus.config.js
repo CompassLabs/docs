@@ -88,6 +88,9 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/compass_logo.svg',
+      colorMode: {
+        disableSwitch: true,
+      },
       navbar: {
         title: 'dojo',
         logo: {
