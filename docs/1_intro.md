@@ -39,7 +39,7 @@ ___
 ## Upcoming 
 ### Market impact model 👀
 Simulate the market's response to your agent actions. With support from Senior Fellows at the Alan Turing Institute, Imperial College London, and the Oxford MAN Institute, dojo will include more complex market scenario models.
-### MEV models
+### MEV models 👀
 Simulate block inclusion probability and transaction ordering
 ### Multi protocol/chain simulations 👀
  Conduct simulations across multiple protocols and chains simultaneously.
