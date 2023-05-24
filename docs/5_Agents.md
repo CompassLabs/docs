@@ -4,21 +4,15 @@ sidebar_position: 5
 
 # Agents
 
-An intro to `dojo` agents.
+Agents serve two main purposes in `dojo`.
 
-## Overview
-
-Agents represent the state of the various agents interacting with the environment within the `dojo` simulation
-
-## Purpose
-Agents generally provide the following functionallity.
-
-- Metrics tracking (e.g. tracking the agent portoflio)
-- Reward definition
+1. **They define a reward function** This function defined how you measure "success" in your trading endeavours. For example you might want to track your total wealth. Or you might want to track impermanent loss.  
+**Importantly**, if you use dojo to optimize a parameterized policy, the policy is optimized with regards to your reward.
+2. **They impersonate you as a trading actor** E.g. they have a portfolio of tokens to work with, and they keep track of their own metrics.
 
 :::note
 
-Agents are NOT responsible for making decisions on how to act in the environment.
+Agents are NOT responsible for making decisions on how to act in the environment. That is the job of the Policies.
 
 :::
 ---

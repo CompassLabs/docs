@@ -4,14 +4,11 @@ sidebar_position: 6
 
 # Policies
 
-An intro to `dojo` policies.
-
-## Overview
 
 Policies implement the decision-making logic for how the associated agent should interact with the environment. This is where you can get creative by implementing your own strategy!
 
 ## Purpose
-Policies generally provide the following functionallity.
+Policies generally provide the following functionality.
 
 - Create actions which are processed by the environment to calculate the agent reward
 - Optionally optimize model parameters to generate better actions
@@ -25,7 +22,7 @@ def predict(self, obs: BaseObs) -> List[BaseAction]:
 ```
 This method takes the observations taken from the environment and derives some actions.
 
-Let's consider a very basic policy. We define an upper and a lower spot-price. Once the price reaches that threshold, we convert all tokens to the currently lower value token.
+Let's consider a very basic policy. We define an upper and a lower spot-price. Once the price reaches that threshold, we convert all tokens to the currently lower-value token.
 ```python
 class PriceWindowPolicy(BasePolicy):
     def __init__(self, agent: BaseAgent, lower_limit: float, upper_limit: float) -> None:

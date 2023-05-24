@@ -5,9 +5,7 @@ sidebar_position: 1
 # Overview
 
 Enviroments in `dojo` are reprensentations of different DeFi exchanges/protocols agents can interact with.
-We currently support
-- [UniswapV3](./UniswapV3)
-- [BalancerV2](./BalancerV2)
+We currently support [UniswapV3](./UniswapV3) and are working hard to launch [BalancerV2](./BalancerV2) support soon.
 
 ## Purpose
 Environments generally provide the following functionallity.
@@ -23,6 +21,11 @@ from dojo.environments.uniswapV3 import UniV3Obs, UniV3Action, UniV3Env
 
 ## Market Impact
 
-Market impact describes how your policy actions will affect the behaviour of the other agents in the simulation. Each environment in `dojo` allows you to select different market impact models for your simulation. 
+Market impact describes how your policy actions will affect the behaviour of the other agents in the simulation.  
+For example, while you can backtest on historical trade data, if you make significant actions on the exchange during the simulation, the market would likely have reacted to your actions.  
 
-By default, the simulation will simply replay the historical actions as close as possible whilst ensuring no transactions revert.
+Each environment in `dojo` allows you to select different market impact models for your simulation. 
+
+:::info
+By default, the simulation will not apply any market impact models. It will simply replay the historical actions as close as possible whilst ensuring no transactions revert.
+:::

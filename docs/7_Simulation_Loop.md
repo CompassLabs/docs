@@ -4,14 +4,14 @@ sidebar_position: 7
 
 # Simulation Loop
 
-And to end, putting everything together in a simulation loop.
-
-![sim-loop](./.tutorial-extras/img/dojo-loop.png)
-
 The basic pattern is pretty simple:
 - the envrionment provides the simulation steps and emits the observation and agent rewards
 - the policy processes the observation and returns actions, e.g. trades
 - the environment executes the actions and the cycle repeats
+
+
+![sim-loop](./.tutorial-extras/img/dojo-loop.png)
+
 
 We are keeping track of the rewards for anylysis purposes. If you want a reminder on some of the concepts here, take a longer peek at the [environment](./environments/UniswapV3#show-me-the-code), the [agent](./Agents#creating-your-own-agent) or the [policy](./Policies#training) as you see fit 🙂
 
