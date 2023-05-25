@@ -11,11 +11,11 @@ Today we are happy to launch dojo: an end-to-end DeFi research platform, enablin
 
 
 <!--truncate-->
-* **Data Sourcing** Utilize dojo's on- and off-chain data capabilities for data ingestion and strategy evaluation
+* **Data Sourcing:** Utilize dojo's on- and off-chain data capabilities for data ingestion and strategy evaluation
 
-* **Simulation** Test, train and optimize DeFi strategies and smart contract through dojo's agent-based simulator to simulate transactions at the EVM smart contract level
+* **Simulation:** Test, train and optimize DeFi strategies and smart contract through dojo's agent-based simulator to simulate transactions at the EVM smart contract level
 
-* **Analysis** Gain insights into strategy performance through tailored agent metric tracking implementation
+* **Analysis:** Gain insights into strategy performance through tailored agent metric tracking implementation
 
 # How it works
 
@@ -25,7 +25,7 @@ Our platform implements an **agent-environment loop** that combines principles f
 
 # Benefits
 
-* **Decrease the sim2real gap**: Dojo runs at the smart contract level and forks the actual blockchain to guarantee on-chain protocol logic 
+* **Decrease the sim2real gap:** Dojo runs at the smart contract level and forks the actual blockchain to guarantee on-chain protocol logic 
 
 * **Implement customized strategies:** Dojo’s flexible pythonic interface enables users to implement custom-made policies for agents to adopt
 
@@ -34,11 +34,11 @@ Our platform implements an **agent-environment loop** that combines principles f
 # Future plans
 Today, dojo is in beta testing. Short term, we are developing the following features:
 
-* **Market impact models:** explore complex scenarios and understand effects of market dynamics on your strategy through inclusion of comprehensive market impact models.
+* **Market impact models:** explore complex scenarios and understand effects of market dynamics on your strategy through inclusion of comprehensive market impact models
 
-* **MEV models:** simulate block inclusion probability and transaction ordering and gain insight into the implications of MEV.
+* **MEV models:** simulate block inclusion probability and transaction ordering and gain insight into the implications of MEV
 
-* **Multi-protocol and multi-chain simulations:** conduct simulations across multiple protocols and chains simultaneously.
+* **Multi-protocol and multi-chain simulations:** conduct simulations across multiple protocols and chains simultaneously
 
 Driven by a team of engineers and academics working at the forefront of machine learning and decentralized finance, our long-term vision for Dojo is to become a robust DeFi research and optimization platform for all sorts of applications. Our goal is to provide the much-needed reliability to help investors and DeFi markets to flourish.
 
