@@ -6,23 +6,40 @@ tags: [dojo, launch]
 image: https://raw.githubusercontent.com/CompassLabs/docs/main/static/img/dojo.png
 ---
 
-We're exited to launch the first version of dojo.
+
 Today we are happy to launch dojo: an end-to-end DeFi research platform, enabling **testing**, **training** and **optimizing** DeFi strategies and smart contracts at the EVM smart contract level. Accessible as a python interface on your local infrastructure. Designed to scale research and productionisation of DeFi strategies.
-
-**TODO** Add content.
-
-here goes the short summary
-One  
-Two  
-Three  
-Four  
 
 
 <!--truncate-->
+**Data Sourcing** Utilize dojo's on- and off-chain data capabilities for data ingestion and strategy evaluation
+**Simulation** Test, train and optimize DeFi strategies and smart contract through dojo's agent-based simulator to simulate transactions at the EVM smart contract level
+**Analysis** Gain insights into strategy performance through tailored agent metric tracking implementation
 
-Five  
-Six    
-Seven  
-Eigh  
+**How it works**
 
-Here goes more detail. It wont show up in the blogpost overview card, but you have to click "Read more".
+Our platform implements an **agent-environment loop** that combines principles from reinforcement learning and agent-based modelling for ultra-realistic and risk-free visibility into smart contract interactions and flow of funds. This flexible framework enables you to **simulate**, **train** and **optimize** a diverse range of scenarios that reflect DeFi dynamics at the **smart contract level**.
+
+**Benefits**
+
+**Decrease the sim2real gap**: Dojo runs at the smart contract level and forks the actual blockchain to guarantee on-chain protocol logic 
+**Implement customized strategies:** Dojo’s flexible pythonic interface enables users to implement custom-made policies for agents to adopt
+**Run on local infrastructure:** Rest assured your strategies and experimentation are kept solely on your local infrastructure.
+
+**Future plans**
+Today, dojo is in beta testing. Short term, we are developing the following features:
+
+**Market impact models:** explore complex scenarios and understand effects of market dynamics on your strategy through inclusion of comprehensive market impact models.
+**MEV models:** simulate block inclusion probability and transaction ordering and gain insight into the implications of MEV.
+**Multi-protocol and multi-chain simulations:** conduct simulations across multiple protocols and chains simultaneously.
+
+Driven by a team of engineers and academics working at the forefront of machine learning and decentralized finance, our long-term vision for Dojo is to become a robust DeFi research and optimization platform for all sorts of applications. Our goal is to provide the much-needed reliability to help investors and DeFi markets to flourish.
+
+# Learn more?
+
+- Dojo documentation & tutorial
+- Reach out for beta testing or protocol integration
+- Follow Compass Labs on Twitter
+- Visit our website
+- Read our research papers
+
+Dojo is derived from the Japanese words representing immersive learning, and we believe that our solution embodies the spirit of its origin.
