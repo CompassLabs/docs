@@ -32,22 +32,4 @@ One<br>
         <category label="dojo" term="dojo"/>
         <category label="launch" term="launch"/>
     </entry>
-    <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://compasslabs.github.io/docs/blog/welcome</id>
-        <link href="https://compasslabs.github.io/docs/blog/welcome"/>
-        <updated>2023-05-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[we are exited to introduce dojo!]]></summary>
-        <content type="html"><![CDATA[<p>we are exited to introduce dojo!</p><p>Stay tuned.</p>]]></content>
-        <author>
-            <name>Elisabeth Duijnstee</name>
-            <uri>https://www.linkedin.com/in/elisabeth-duijnstee-9104b7124/</uri>
-        </author>
-        <author>
-            <name>Rohan Tangri</name>
-            <uri>https://www.linkedin.com/in/rohan-tangri/</uri>
-        </author>
-        <category label="dojo" term="dojo"/>
-        <category label="hello" term="hello"/>
-    </entry>
 </feed>

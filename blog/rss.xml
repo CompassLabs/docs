@@ -25,15 +25,5 @@ One<br>
             <category>dojo</category>
             <category>launch</category>
         </item>
-        <item>
-            <title><![CDATA[Welcome]]></title>
-            <link>https://compasslabs.github.io/docs/blog/welcome</link>
-            <guid>https://compasslabs.github.io/docs/blog/welcome</guid>
-            <pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[we are exited to introduce dojo!]]></description>
-            <content:encoded><![CDATA[<p>we are exited to introduce dojo!</p><p>Stay tuned.</p>]]></content:encoded>
-            <category>dojo</category>
-            <category>hello</category>
-        </item>
     </channel>
 </rss>
