@@ -3,7 +3,7 @@ slug: dojo-launch
 title: Introducing Dojo!
 authors: [elisabeth, rohan]
 tags: [dojo, launch]
-image: https://raw.githubusercontent.com/CompassLabs/docs/main/static/img/dojo.png
+image: https://raw.githubusercontent.com/CompassLabs/docs/main/static/img/article_env.png
 ---
 
 
@@ -20,6 +20,8 @@ Today we are happy to launch dojo: an end-to-end DeFi research platform, enablin
 # How it works
 
 Our platform implements an **agent-environment loop** that combines principles from reinforcement learning and agent-based modelling for ultra-realistic and risk-free visibility into smart contract interactions and flow of funds. This flexible framework enables you to **simulate**, **train** and **optimize** a diverse range of scenarios that reflect DeFi dynamics at the **smart contract level**.
+
+![Agent-environment loop]([https://example.com/image.jpg](https://raw.githubusercontent.com/CompassLabs/docs/main/static/img/article_env.png))
 
 # Benefits
 
