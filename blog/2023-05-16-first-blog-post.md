@@ -1,14 +1,26 @@
 ---
-slug: first-beta-launch
-title: First Beta launch !
-authors: elisabeth
+slug: dojo-lauch
+title: Dojo launches!
+authors: [elisabeth, rohan]
 tags: [dojo, launch]
 ---
 
 We're exited to launch the first version of dojo.
 
-We're still actiuvely developing the package, so don't expect it to be fully stable just yet.
+**TODO** Add content.
+
+here goes the short summary
+One  
+Two  
+Three  
+Four  
+
 
 <!--truncate-->
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet
+Five  
+Six    
+Seven  
+Eigh  
+
+Here goes more detail. It wont show up in the blogpost overview card, but you have to click "Read more".
