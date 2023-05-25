@@ -42,7 +42,7 @@ Driven by a team of engineers and academics working at the forefront of machine 
 
 # Learn more?
 
-- Dojo documentation & tutorial
+- Test your strategy and learn dojo documentation & tutorial
 - Reach out for beta testing or protocol integration
 - Follow Compass Labs on Twitter
 - Visit our website
