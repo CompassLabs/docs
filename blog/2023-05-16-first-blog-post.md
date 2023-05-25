@@ -48,4 +48,4 @@ Driven by a team of engineers and academics working at the forefront of machine 
 - Visit our website
 - Read our research papers
 
-_Dojo is derived from the Japanese words representing immersive learning, and we believe that our solution embodies the spirit of its origin._
+_Dojo is derived from the Japanese words representing immersive learning, and we believe that our solution captures the essence of this concept._
