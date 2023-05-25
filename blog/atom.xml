@@ -8,15 +8,26 @@
     <subtitle>dojo Blog</subtitle>
     <icon>https://compasslabs.github.io/docs/img/compass_logo.svg</icon>
     <entry>
-        <title type="html"><![CDATA[First Beta launch !]]></title>
-        <id>https://compasslabs.github.io/docs/blog/first-beta-launch</id>
-        <link href="https://compasslabs.github.io/docs/blog/first-beta-launch"/>
+        <title type="html"><![CDATA[Dojo launches!]]></title>
+        <id>https://compasslabs.github.io/docs/blog/dojo-lauch</id>
+        <link href="https://compasslabs.github.io/docs/blog/dojo-lauch"/>
         <updated>2023-05-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We're exited to launch the first version of dojo.]]></summary>
-        <content type="html"><![CDATA[<p>We're exited to launch the first version of dojo.</p><p>We're still actiuvely developing the package, so don't expect it to be fully stable just yet.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <content type="html"><![CDATA[<p>We're exited to launch the first version of dojo.</p><p><strong>TODO</strong> Add content.</p><p>here goes the short summary
+One<br>
+<!-- -->Two<br>
+<!-- -->Three<br>
+<!-- -->Four  </p><p>Five<br>
+<!-- -->Six<br>
+<!-- -->Seven<br>
+<!-- -->Eigh  </p><p>Here goes more detail. It wont show up in the blogpost overview card, but you have to click "Read more".</p>]]></content>
         <author>
             <name>Elisabeth Duijnstee</name>
             <uri>https://www.linkedin.com/in/elisabeth-duijnstee-9104b7124/</uri>
+        </author>
+        <author>
+            <name>Rohan Tangri</name>
+            <uri>https://www.linkedin.com/in/rohan-tangri/</uri>
         </author>
         <category label="dojo" term="dojo"/>
         <category label="launch" term="launch"/>
@@ -33,7 +44,7 @@
             <uri>https://www.linkedin.com/in/elisabeth-duijnstee-9104b7124/</uri>
         </author>
         <author>
-            <name>Rohan Tabgri</name>
+            <name>Rohan Tangri</name>
             <uri>https://www.linkedin.com/in/rohan-tangri/</uri>
         </author>
         <category label="dojo" term="dojo"/>

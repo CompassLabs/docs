@@ -9,12 +9,19 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[First Beta launch !]]></title>
-            <link>https://compasslabs.github.io/docs/blog/first-beta-launch</link>
-            <guid>https://compasslabs.github.io/docs/blog/first-beta-launch</guid>
+            <title><![CDATA[Dojo launches!]]></title>
+            <link>https://compasslabs.github.io/docs/blog/dojo-lauch</link>
+            <guid>https://compasslabs.github.io/docs/blog/dojo-lauch</guid>
             <pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[We're exited to launch the first version of dojo.]]></description>
-            <content:encoded><![CDATA[<p>We're exited to launch the first version of dojo.</p><p>We're still actiuvely developing the package, so don't expect it to be fully stable just yet.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>We're exited to launch the first version of dojo.</p><p><strong>TODO</strong> Add content.</p><p>here goes the short summary
+One<br>
+<!-- -->Two<br>
+<!-- -->Three<br>
+<!-- -->Four  </p><p>Five<br>
+<!-- -->Six<br>
+<!-- -->Seven<br>
+<!-- -->Eigh  </p><p>Here goes more detail. It wont show up in the blogpost overview card, but you have to click "Read more".</p>]]></content:encoded>
             <category>dojo</category>
             <category>launch</category>
         </item>
