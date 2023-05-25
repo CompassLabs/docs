@@ -4,9 +4,12 @@ sidebar_position: 5
 
 # Agents
 
+The agent is an executing and learning entity in dojo’s framework. The agent interacts with the environment, receives observations and takes actions.  
+Dojo allows you to have multiple agents interacting at once.
+
 Agents serve two main purposes in `dojo`.
 
-1. **They define a reward function** This function defined how you measure "success" in your trading endeavours. For example you might want to track your total wealth. Or you might want to track impermanent loss.  
+1. **They define a reward function** This function defines how you measure "success" in your trading endeavours. For example you might want to track your total wealth. Or you might want to track impermanent loss.  
 **Importantly**, if you use dojo to optimize a parameterized policy, the policy is optimized with regards to your reward.
 2. **They impersonate you as a trading actor** E.g. they have a portfolio of tokens to work with, and they keep track of their own metrics.
 

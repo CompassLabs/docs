@@ -2,44 +2,6 @@
 sidebar_position: 2
 ---
 
-
- <!-- <iframe frameborder=0 style="min-width: 200px; width: 60%; height: 460px;" scrolling="no" seamless="seamless" srcdoc='<html><body><style type="text/css">.gist .gist-data { height: 400px; }</style><script src="https://gist.github.com/sundbry/55bb902b66a39c0ff83629d9a8015ca4.js"></script></body></html>'>
- </iframe>  -->
-import CodeBlock from '@site/src/components/CodeBlock';
-
-<Codeblock name="aaaaaaa" ></Codeblock>
-
-
-<!-- var requestOptions = {
-  method: 'GET',
-  redirect: 'follow'
-};
-
-fetch("https://raw.githubusercontent.com/CompassLabs/dojo_examples/main/run.py", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-
-
-
-
-<CodeBlock language="jsx">{await fetch("https://raw.githubusercontent.com/CompassLabs/dojo_examples/main/run.py", {
-  method: 'GET',
-  redirect: 'follow'
-})
-  .then(response => response.text())}</CodeBlock> -->
-
-<!-- <CodeBlock
-  language="jsx"
-  title="/src/components/HelloCodeTitle.js"
-  showLineNumbers>
-  {`function HelloCodeTitle(props) {
-return <h1>Hello, {props.name}</h1>;
-}`}
-</CodeBlock> -->
-
-
-
 # UniswapV3
 You can imort this enviroment as 
 ```python
@@ -51,17 +13,32 @@ It is recommended to read the [whitepaper](https://uniswap.org/whitepaper-v3.pdf
 :::
 
 ## Supported Pools
-- 0x5777d92f208679db4b9778590fa3cab3ac9e2168
-- 0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640
-- 0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8
-- 0xcbcdf9626bc03e24f779434178a73a0b4bad62ed
+At the moment, we support the following pools. 
+
+ - DAI/USDC 0.01%: [0x5777d92f208679db4b9778590fa3cab3ac9e2168](https://info.uniswap.org/#/pools/0x5777d92f208679db4b9778590fa3cab3ac9e2168)
+ - USDC/ETH 0.05%: [0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640](https://info.uniswap.org/#/pools/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640)
+ - USDC/ETH 0.3%: [0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8](https://info.uniswap.org/#/pools/0x8ad599c3a0ff1de082011efddc58f1908eb6e6)
+ - WBTC/ETH 0.3% [0xcbcdf9626bc03e24f779434178a73a0b4bad62ed](https://info.uniswap.org/#/pools/0xcbcdf9626bc03e24f779434178a73a0b4bad62ed)
+
+:::note
+We are working on an on-demand dataloader, enabling you to work with any pool you'd like.
+:::
+
 
 ## Observations
+
+An observation refers to the information that the agent receives from the environment at every timestep.
+Think of the current price, or the amount of liquidity in the pool.  
 Since UniswapV3 is based on tick ranges, many observations are on a per tick basis.  
 
-**Please refer to the [code reference](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Obs) for more details.**
+The methods within UniV3Obs can be found [here](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Obs).
+
 
 ## Actions
+
+Actions are the means through which the agent interacts with the environment to achieve investment goals.  
+Depending on whether you are testing or training, through the learning process, the agent can refine the action
+strategy and leverage feedback from the environment in the form of the reward to gradually improve decision-making.
 
 In general, there are 3 actions you can perform on the Uniswap V3 environment:
 
