@@ -45,7 +45,7 @@ Driven by a team of engineers and academics working at the forefront of machine 
 # Learn more?
 
 - Test your strategy, visit [dojo documentation & tutorial](https://compasslabs.github.io/docs/)
-- Reach out for beta testing or protocol integration
+- [Reach out](mailto:elisabeth@compasslabs.ai) or beta testing or protocol integration
 - Follow Compass Labs on [twitter](https://twitter.com/labs_compass)
 - Visit our [website](https://compasslabs.ai/) and request a demo
 - Read our [research papers](https://arxiv.org/abs/2301.06831v1)
