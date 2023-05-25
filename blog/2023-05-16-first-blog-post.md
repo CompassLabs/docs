@@ -3,7 +3,7 @@ slug: dojo-lauch
 title: Dojo launches!
 authors: [elisabeth, rohan]
 tags: [dojo, launch]
-image: https://compasslabs.ai/assets/images/image12.svg?v=b883a95d
+image: https://raw.githubusercontent.com/CompassLabs/docs/main/static/img/dojo.png
 ---
 
 We're exited to launch the first version of dojo.
