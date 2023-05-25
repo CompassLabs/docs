@@ -5,16 +5,16 @@ sidebar_position: 5
 # Agents
 
 The agent is an executing and learning entity in dojo’s framework. The agent interacts with the environment, receives observations and takes actions.  
-Dojo allows you to have multiple agents interacting at once.
+`dojo` allows you to have multiple agents interacting at once.
 
 Agents serve two main purposes in `dojo`.
 
-1. **They define a reward function** This function defines how you measure "success" in your trading endeavours. For example you might want to track your total wealth. Or you might want to track impermanent loss.  
+1. **They impersonate you as a trading actor** E.g. they have a portfolio of tokens to work with, and they keep track of their own metrics.
+2. **They define a reward function** This function defines how you measure "success" in your trading endeavours. For example you might want to track your total wealth. Or you might want to track impermanent loss.  
 **Importantly**, if you use dojo to optimize a parameterized policy, the policy is optimized with regards to your reward.
-2. **They impersonate you as a trading actor** E.g. they have a portfolio of tokens to work with, and they keep track of their own metrics.
+
 
 :::note
-
 Agents are NOT responsible for making decisions on how to act in the environment. That is the job of the Policies.
 
 :::
@@ -33,7 +33,7 @@ The base class implements some pre-existing metrics tracking functionality:
 ---
 ## Creating your own agent
 
-Here is a super basic demo for creating your own agent, you just need to implement your reward function!
+Here is a basic demo for creating your own agent, you just need to implement your reward function!
 ```python
 from dojo.agents import BaseAgent
 from dojo.environments.uniswapV3 import UniV3Obs

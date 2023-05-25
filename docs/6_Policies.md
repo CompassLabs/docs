@@ -6,41 +6,48 @@ sidebar_position: 6
 
 
 The agent follows "policies" to make decisions.  
+
 The policy defines the mapping from the environment-observations to the actions that are being taken.  
-Within dojo, the *policy* can be referred to as the *agent’s DeFi strategy*. This is where you can get creative by implementing your own strategy!
+Within `dojo`, **the *policy* can be referred to as the *agent’s DeFi strategy***. This is where you can get creative by implementing your own strategy!
 
 
 ## Purpose
 Policies generally provide the following functionality.
 
 - **"Predict"**
-  When you’re testing your DeFi strategy, the agent’s actions are focused on evaluating the strategy performance under market conditions without changing the model parameters. 
+  When you’re **testing** your DeFi strategy, the agent provides you with a user-defined metric, tracking how well you are doing at each step.  
 - **"Fit"**
-  If you’re interested in training your DeFi strategy, the agent’s actions are aimed at optimizing the parameters in your strategy’s model. By leveraging dojos optimization framework, the agent learns to make adjustments to the strategy’s parameters to enhance its performance and achieve better results in real-world scenarios. 
+  If you’re interested in **training** your DeFi strategy, the agent tracks the same metric as above, but then keeps tweaking your model parameters until it finds the optimal setting.
 
 
 
-## Strategy implementation
-To test out your own DeFi strategy, all you need to do is implement the `predict` method:   
-The predict method takes the observations from the environment as input and returns a list of actions as output.  
+## Strategy Implementation
+To test out your own DeFi strategy, all you need to do is implement the `predict` method.   
+It takes the observations from the environment as input and returns a list of actions as output.  
 
 
 
 ### Example 1: Test your DeFi strategy! 
-In this example, we consider a basic policy for trading on UniswapV3, where we define an upper and lower spot-price and once the price reaches the upper or lower limit, all tokens are converted to the currently lower value token: 
+In this example, we consider a basic policy for trading on UniswapV3, where we define an *upper and lower spot-price* and once the price reaches the upper or lower limit, all tokens are converted to the currently lower value token: 
 
 ```
-TODO
+TODO code
 ```
 
 ### Example 2: Train your DeFi strategy! 
-If you want to take it one step further, dojo allows you to encode a parameteric model in your policy and optimize it however you want! To show you how, we take the static policy from Example 1 but let you train your strategy to tune the upper and lower limit parameter to improve the performance of your strategy. To start with, we might think that when volatility is high, the spread between limits should be further apart. Let’s implement the simplest way of doing this: 
-Note: These are just examples of testing and training policies to get you started. You can get a lot more creative and sophisticated! 
+If you want to take it one step further, dojo allows you to encode a parameteric model in your policy and optimize it however you want!   
+To show you how, we take the static policy from Example 1 but let you train your strategy to tune the upper and lower limit parameter to improve the performance of your strategy.
 
+To start with, we might think that when volatility is high, the spread between limits should be further apart. Let’s implement the simplest way of doing this: 
 
 ```
-TODO
+TODO code
 ```
+
+**Note:** These are just examples of testing and training policies to get you started. You can get a lot more creative and sophisticated! 
+
+
+
 
 
 

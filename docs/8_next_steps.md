@@ -8,7 +8,7 @@ title: Next Steps
 You've made it!  
 
 
-If you liked the intro and want to play around with dojo, you can get a *free trial license* [here](mailto:elisabeth@compasslabs.ai?subject=Dojo%20trial%20license%20request&body=%3C%20Please%20let%20us%20know%20your%20name%20and%20the%20company%20you%20represent.%20We'll%20get%20back%20ASAP%20%3E).
+If you liked the intro and want to play around with dojo, please [get in touch](mailto:elisabeth@compasslabs.ai?subject=dojo%20trial%20license%20request&body=%3C%20Please%20let%20us%20know%20your%20name%20and%20the%20company%20you%20represent.%20We'll%20get%20back%20ASAP%20%3E).
 
 As next steps we suggest
 
