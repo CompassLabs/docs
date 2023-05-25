@@ -33,7 +33,7 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -124,11 +124,11 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorial/intro',
               },
               {
                 label: 'Code reference',
-                href: 'https://www.google.com',
+                href: 'https://readthedocs.compasslabs.ai',
               },
             ],
           },
@@ -139,10 +139,10 @@ const config = {
               //   label: 'Stack Overflow',
               //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               // },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/fyrXhZtmc5',
-              },
+              // {
+              //   label: 'Discord',
+              //   href: 'https://discord.gg/fyrXhZtmc5',
+              // },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/labs_compass',
