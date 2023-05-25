@@ -15,17 +15,17 @@ Today we are happy to launch dojo: an end-to-end DeFi research platform, enablin
 **Simulation** Test, train and optimize DeFi strategies and smart contract through dojo's agent-based simulator to simulate transactions at the EVM smart contract level
 **Analysis** Gain insights into strategy performance through tailored agent metric tracking implementation
 
-**How it works**
+# How it works
 
 Our platform implements an **agent-environment loop** that combines principles from reinforcement learning and agent-based modelling for ultra-realistic and risk-free visibility into smart contract interactions and flow of funds. This flexible framework enables you to **simulate**, **train** and **optimize** a diverse range of scenarios that reflect DeFi dynamics at the **smart contract level**.
 
-**Benefits**
+# Benefits
 
 **Decrease the sim2real gap**: Dojo runs at the smart contract level and forks the actual blockchain to guarantee on-chain protocol logic 
 **Implement customized strategies:** Dojo’s flexible pythonic interface enables users to implement custom-made policies for agents to adopt
 **Run on local infrastructure:** Rest assured your strategies and experimentation are kept solely on your local infrastructure.
 
-**Future plans**
+# Future plans
 Today, dojo is in beta testing. Short term, we are developing the following features:
 
 **Market impact models:** explore complex scenarios and understand effects of market dynamics on your strategy through inclusion of comprehensive market impact models.
