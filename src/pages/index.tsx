@@ -11,6 +11,8 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <meta name="description" content="Dojo. An end-to-end DeFi research platform." />
+      <meta name="og:description" content="Dojo. An end-to-end DeFi research platform." />
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
