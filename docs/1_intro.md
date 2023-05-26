@@ -56,6 +56,6 @@ If you want your chain or protocol to be integrated with `dojo`, [reach out](mai
 ## Get access to `dojo`
 `dojo` is currently in beta testing. Reach out for priority access & feel free to contact us with any questions or feedback:
 - [Support via email](mailto:elisabeth@compasslabs.ai)
-- [@labs_compass](TODO) on Twitter
-- [compasslabs.ai](TODO) for general information on Compass Labs
+- [@labs_compass](https://twitter.com/labs_compas) on Twitter
+- [compasslabs.ai](https://compasslabs.ai/) for general information on Compass Labs
 
