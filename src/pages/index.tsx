@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="An end-to-end DeFi research platform. />">
+      description="An end-to-end DeFi research platform.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
