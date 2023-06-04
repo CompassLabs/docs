@@ -28,7 +28,7 @@ Setting up dojo shouln't take more than 5 minutes. Follow these steps:
 #### 1. Install
 `dojo` is provided as a Python package on PyPi.
 To install, simply run  
-```python3 -m pip install -i http://54.90.104.158:8080 dojo --trusted-host 54.90.104.158```
+```pip install -i http://client@54.90.104.158:8080 dojo --trusted-host 54.90.104.158```
 
 
 #### 2. Setup configuration
