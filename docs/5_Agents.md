@@ -39,7 +39,7 @@ from dojo.agents import BaseAgent
 from dojo.environments.uniswapV3 import UniV3Obs
 
 class WealthAgent(BaseAgent):
-    def __init__(initial_portfolio: Portfolio = {"USDC": 10_000}) -> None:
+    def __init__(self, initial_portfolio: Portfolio = {"USDC": 10_000}) -> None:
         super().__init__(initial_portfolio=initial_portfolio)
 
     def reward(obs: UniV3Obs) -> float:

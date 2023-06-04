@@ -54,7 +54,7 @@ sim_end = datetime(2023, 1, 2)
 demo_agent = WealthAgent(initial_portfolio={"USDC": 10_000})
 env = UniV3Env(
     agents=[demo_agent],
-    date_range=(sim_start, sim_end)
+    date_range=(sim_start, sim_end),
     pools=["0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8"],
     market_impact="replay", # "replay" by default, to replay history
 )
