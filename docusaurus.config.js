@@ -25,7 +25,7 @@ const config = {
   baseUrl: '/docs',
 
 
-  
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'compasslabs', // Usually your GitHub org/user name.
@@ -69,6 +69,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'G-EQSZ3TK15C',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -104,7 +108,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/CompassLabs',
             label: 'GitHub',

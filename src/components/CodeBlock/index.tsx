@@ -8,8 +8,8 @@ interface Props {
 
 export default function CodeBlock(props: Props): JSX.Element {
 
-  const [code, setCode] = useState("wert");
-  const [link, setLink] = useState("wert");
+  const [code, setCode] = useState("code");
+  const [link, setLink] = useState("link");
 
   useEffect(() => {
     const fetchData = async () => {
