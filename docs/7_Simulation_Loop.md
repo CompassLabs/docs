@@ -3,6 +3,7 @@ sidebar_position: 7
 ---
 
 import ImgGeneral from '../static/img/env4.png';
+import CodeBlock from '../src/components/CodeBlock';
 
 # Simulation Loop
 
@@ -42,41 +43,8 @@ If you want a reminder on some of the concepts here, take a longer peek at the [
 
 ## Example
 
+<CodeBlock url="https://github.com/CompassLabs/dojo_examples/blob/main/run.py" lines={[10,43]}/>
 
-```python
-import logging
-# You can adjust the log level to different granularities
-logging.basicConfig(format="%(asctime)s - %(message)s", level=20)
-
-sim_start = datetime(2023, 1, 1)
-sim_end = datetime(2023, 1, 2)
-
-demo_agent = WealthAgent(initial_portfolio={"USDC": 10_000})
-env = UniV3Env(
-    agents=[demo_agent],
-    date_range=(sim_start, sim_end),
-    pools=["0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8"],
-    market_impact="replay", # "replay" by default, to replay history
-)
-policy = DynamicPriceWindowPolicy(
-    agent=demo_agent, lower_limit=2000, upper_limit=2500
-)
-
-blocks=[]
-rewards=[]
-obs = env.reset()
-for block in env.iter_block():
-    policy.fit(obs) # train dynamic policy
-    policy_actions = policy.predict(obs)
-    market_actions = env.market_actions(policy_actions)
-    actions = policy_actions + market_actions # control over action ordering
-    obs, rewards, dones, infos = env.step(actions=actions)
-
-    blocks.append(block)
-    rewards.append(reward)
-
-plt.plot(blocks, rewards)
-```
 
 Th resulting plot looks like this  
 ![](/img/results.png)
