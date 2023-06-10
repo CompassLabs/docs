@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 ---
+import CodeBlock from '../../src/components/CodeBlock';
 
 # UniswapV3
 You can imort the UniswapV3 environment by 
@@ -54,34 +55,4 @@ Please refer to the [code reference](https://readthedocs.compasslabs.ai/dojo.env
 
 ## Example
 
-```python title=".env"
-import numpy as np
-from dojo.environments.uniswapV3 import UniV3Env, UniV3Action
-from datetime import datetime
-
-# USDC/WETH pool on UniswapV3
-pools = ["0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8"]  # WETH/USDC
-sim_start = datetime(2023, 4, 29)
-sim_end = datetime(2023, 5, 10)
-
-env = UniV3Env(
-    agents=[], #Of course, you'd want an agent here to actually do things
-    date_range=(sim_start, sim_end),
-    pools=pools,
-    market_impact="replay", # defaults to "replay", simply replaying history
-)
-
-action = UniV3Action(
-    agent=mock_agent,
-    type="quote",
-    pool=env.obs.pools[0],
-    quantities=np.array([0.1, 1]),
-    tick_range=np.array([0, 1]),
-    owner="0xc36442b4a4522e871399cd717abdd847ab11fe88",
-)
-
-env.step(actions=[action])
-```
-
-
-<Codeblock name="aaaaaaa" ></Codeblock>
+<CodeBlock url="https://github.com/CompassLabs/dojo_examples/blob/main/snippets/uniswapv3_doaction.py" lines={[1,31]}/>
