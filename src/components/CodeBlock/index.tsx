@@ -3,7 +3,7 @@ import CB from '@theme/CodeBlock';
 
 interface Props {
   url: string;
-  lines: number[];
+  snippet_name: string;
 }
 
 export default function CodeBlock(props: Props): JSX.Element {
@@ -16,9 +16,27 @@ export default function CodeBlock(props: Props): JSX.Element {
       const test = await fetch(props.url.replace("github.com","raw.githubusercontent.com").replace("/blob",""));
       const result = await test.text();
       const lines = result.trim().split('\n');
-      console.log(lines);
-      setCode(lines.slice(props.lines[0]-1,props.lines[1]).join('\n'));
-      setLink(props.url+`#L${props.lines[0]}-L${props.lines[1]}`);
+      let start=0;
+      let end=0;
+      lines.forEach((line, index) => {
+        console.log(line);
+        if (line.includes(`SNIPPET ${props.snippet_name} START`)) {
+          start = index+1;
+        }
+        if (line.includes(`SNIPPET ${props.snippet_name} END`)) {
+          end = index;
+        }
+      });
+      // If the snippet markers cant be matched in the file, just show the whole file
+      if(start===0 && end===0) {
+        setCode(lines.join('\n'));
+        setLink(props.url);
+        
+      } else{
+        setCode(lines.slice(start,end).join('\n'));
+        setLink(props.url+`#L${start}-L${end+1}`);
+      }
+      
     };
     fetchData();
   });

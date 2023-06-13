@@ -43,7 +43,7 @@ If you want a reminder on some of the concepts here, take a longer peek at the [
 
 ## Example
 
-<CodeBlock url="https://github.com/CompassLabs/dojo_examples/blob/main/run.py" lines={[10,43]}/>
+<CodeBlock url="https://github.com/CompassLabs/dojo_examples/blob/main/run.py" snippet_name={"1"}/>
 
 
 Th resulting plot looks like this  
