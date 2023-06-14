@@ -49,5 +49,3 @@ If you want a reminder on some of the concepts here, take a longer peek at the [
 Th resulting plot looks like this  
 ![](/img/results.png)
 
-
-<a href={ require("/img/results.png").default }>Download the full script here</a>
