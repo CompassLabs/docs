@@ -45,9 +45,11 @@ If you want a reminder on some of the concepts here, take a longer peek at the [
 
 <CodeBlock url="https://github.com/CompassLabs/dojo_examples/blob/main/run.py" snippet_name={"1"}/>
 
+<details><summary>See a visualization of this simulation</summary>
+<p>
+This is a screenshot of our upcoming live-simulation dashboard.
+</p>
 
-Th resulting plot looks like this  
-![](/img/results.png)
+![](/img/simulation_full.png)
 
-
-<a href={ require("/img/results.png").default }>Download the full script here</a>
+</details>
