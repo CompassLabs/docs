@@ -46,3 +46,8 @@
   -webkit-filter:invert(100%);
    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
 }
+
+table, th, td {
+  border: 1px solid;
+  border-color: #FF67C3;
+}
