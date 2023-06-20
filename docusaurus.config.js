@@ -128,7 +128,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/tutorial/intro',
+                to: '/tutorial/intro',
               },
               {
                 label: 'Code reference',
