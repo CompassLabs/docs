@@ -14,6 +14,19 @@ permissions:
   contents: write
 
 jobs:
+  test:
+   runs-on: ubuntu-latest
+   steps:
+      - name: Checkout tools repo
+        uses: actions/checkout@v3
+        with:
+          repository: compasslabs/dojo_examples
+      - name: List files
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        run: |
+          ls
   release_dojo_examples:
     name: Release dojo_examples
     runs-on: ubuntu-latest
