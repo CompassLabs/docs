@@ -1,8 +1,14 @@
 name: Create release build
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+      tags:
+        description: 'Test scenario tags'
+      environment:
+        description: 'Environment to run tests against'
 
 permissions:
   contents: write
