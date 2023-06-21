@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CB from '@theme/CodeBlock';
 
 interface Props {
-  url: string;
+  file: string;
   snippet_name: string;
 }
 
@@ -11,15 +11,20 @@ export default function CodeBlock(props: Props): JSX.Element {
   const [code, setCode] = useState("code");
   const [link, setLink] = useState("link");
 
+  const branch= process.env.BRANCH ? process.env.BRANCH: 'dev';
+
   useEffect(() => {
     const fetchData = async () => {
-      const test = await fetch(props.url.replace("github.com","raw.githubusercontent.com").replace("/blob",""));
+      
+      const basicURL = 'https://github.com/CompassLabs/dojo_examples/blob/'+branch+'/'+props.file;
+      const rawURL = 'https://raw.githubusercontent.com/CompassLabs/dojo_examples/'+branch+'/'+props.file;
+
+      const test = await fetch(rawURL);
       const result = await test.text();
       const lines = result.trim().split('\n');
       let start=0;
       let end=0;
       lines.forEach((line, index) => {
-        console.log(line);
         if (line.includes(`SNIPPET ${props.snippet_name} START`)) {
           start = index+1;
         }
@@ -30,11 +35,11 @@ export default function CodeBlock(props: Props): JSX.Element {
       // If the snippet markers cant be matched in the file, just show the whole file
       if(start===0 && end===0) {
         setCode(lines.join('\n'));
-        setLink(props.url);
+        setLink(basicURL);
         
       } else{
         setCode(lines.slice(start,end).join('\n'));
-        setLink(props.url+`#L${start}-L${end+1}`);
+        setLink(basicURL+`#L${start}-L${end+1}`);
       }
       
     };
