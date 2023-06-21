@@ -21,7 +21,15 @@ jobs:
       SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
       API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
     steps:
+      - name: Print variables
+        run: |
+          echo  'API_TOKEN_GITHUB ${{ secrets.API_TOKEN_GITHUB }}'
+          echo  'GITHUB_TOKEN ${{ secrets.GITHUB_TOKEN }}'
+          echo 'SSH_DEPLOY_KEY ${{ secrets.SSH_DEPLOY_KEY }}'
       - name: Configure Git
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         run: |
           git clone git@github.com:CompassLabs/dojo_examples.git
           cd dojo_examples
