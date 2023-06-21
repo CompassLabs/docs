@@ -1,33 +1,91 @@
 name: Create release build
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+      tags:
+        description: 'Test scenario tags'
+      environment:
+        description: 'Environment to run tests against'
 
 permissions:
   contents: write
 
 jobs:
-  create:
-    name: Create release build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+  test:
+   runs-on: ubuntu-latest
+   steps:
+      - name: Checkout dojo_examples repo
+        uses: actions/checkout@v3
         with:
-          node-version: 18
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-      - name: Build website
-        run: npm run build
-      
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
+          repository: compasslabs/dojo_examples
+          branch: dev
+          ref: dev
+      - name: List files
         env:
-          REPO: self
-          BRANCH: build-release # The branch name where you want to push the assets
-          FOLDER: build # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        run: |
+          ls
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: '.'
+          destination-github-username: 'CompassLabs'
+          destination-repository-name: 'dojo_examples'
+          user-email: scheuclu@gmail.com
+          target-branch: main
+          
+          
+          
+#   release_dojo_examples:
+#     name: Release dojo_examples
+#     runs-on: ubuntu-latest
+#     env:
+#       SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+#       API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#     steps:
+#       - name: Print variables
+#         run: |
+#           echo  'API_TOKEN_GITHUB ${{ secrets.API_TOKEN_GITHUB }}'
+#           echo  'GITHUB_TOKEN ${{ secrets.GITHUB_TOKEN }}'
+#           echo 'SSH_DEPLOY_KEY ${{ secrets.SSH_DEPLOY_KEY }}'
+#       - name: Configure Git
+#         env:
+#           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+#           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#         run: |
+#           git clone git@github.com:CompassLabs/dojo_examples.git
+#           cd dojo_examples
+#           git checkout dev
+#           git merge main
+#           git push
+#   create:
+#     name: Create release build
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: 18
+#           cache: npm
+
+#       - name: Install dependencies
+#         run: npm ci
+#       - name: Build website
+#         run: npm run build
+      
+#       - name: Push
+#         uses: s0/git-publish-subdir-action@develop
+#         env:
+#           REPO: self
+#           BRANCH: build-release # The branch name where you want to push the assets
+#           FOLDER: build # The directory where your assets are generated
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+#           MESSAGE: "Build: ({sha}) {msg}" # The commit message
