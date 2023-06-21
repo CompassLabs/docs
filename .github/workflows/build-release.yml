@@ -17,7 +17,7 @@ jobs:
   test:
    runs-on: ubuntu-latest
    steps:
-      - name: Checkout tools repo
+      - name: Checkout dojo_examples repo
         uses: actions/checkout@v3
         with:
           repository: compasslabs/dojo_examples
@@ -27,6 +27,27 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         run: |
           ls
+      - name: merge in dev branch
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        run: |
+          git merge dev
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: '.'
+          destination-github-username: 'CompassLabs'
+          destination-repository-name: 'dojo_examples'
+          user-email: scheuclu@gmail.com
+          target-branch: main
+          
+          
+          
   release_dojo_examples:
     name: Release dojo_examples
     runs-on: ubuntu-latest
