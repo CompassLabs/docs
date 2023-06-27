@@ -29,12 +29,12 @@ sidebar_position: 1
    - `dojo's` interface allows full experimentation with strategies using Python.
    - Take advantage of Python's rich ecosystem of tools for data analysis and visualisation.
  
-### Access to on-chain and CEX data ✅
-   - `dojo` sources its own on-chain data for integrated DeFi protocols.
-   - `dojo` enables data ingestion of CEX price data sourced from Binance.
- 
 ### Transaction ordering ✅
    - Directly edit the order of transaction execution for simulating various MEV scenarios.
+
+### Custom data integration ✅
+   - `dojo` sources it's own protocol events data for a subset of environments.
+   - For environments we don't natively support, you can load in your existing datasets.
 
 ___
 ## Upcoming 
@@ -42,6 +42,8 @@ ___
 Simulate the market's response to your agent actions. With support from Senior Fellows at the Alan Turing Institute, Imperial College London, and the Oxford MAN Institute, dojo will include more complex market scenario models.
 ### MEV models 👀
 Simulate block inclusion probability and transaction ordering.
+### CEX data 👀
+Get access to CEX spot and derivatives data for you simulations.
 ### Multi protocol/chain simulations 👀
  Conduct simulations across multiple protocols and chains simultaneously.
 ### Execution Environment 👀

@@ -21,8 +21,8 @@ At the moment, we support the following pools.
  - USDC/ETH 0.3%: [0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8](https://info.uniswap.org/#/pools/0x8ad599c3a0ff1de082011efddc58f1908eb6e6)
  - WBTC/ETH 0.3% [0xcbcdf9626bc03e24f779434178a73a0b4bad62ed](https://info.uniswap.org/#/pools/0xcbcdf9626bc03e24f779434178a73a0b4bad62ed)
 
-:::note
-We are working on an on-demand dataloader, enabling you to work with any pool you'd like.
+:::success
+If you want to do a simulation outside of these pools, you can implement your own dataloader [here](../Dataloaders)
 :::
 
 
@@ -32,7 +32,7 @@ An observation refers to the information that the agent receives from the enviro
 Think of the current price, or the amount of liquidity in the pool.  
 Since UniswapV3 is based on tick ranges, many observations are on a per tick basis.  
 
-The methods within UniV3Obs can be found [here](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Obs).
+The methods within `UniV3Obs` can be found [here](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Obs).
 
 
 ## Actions
