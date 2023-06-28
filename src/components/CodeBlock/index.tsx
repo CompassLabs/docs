@@ -17,7 +17,7 @@ export default function CodeBlock(props: Props): JSX.Element {
     siteConfig: {customFields},
   } = useDocusaurusContext();
 
-  const branch= customFields.branch ? customFields.branch: 'dev';
+  const branch: string = customFields.branch=='main' ? 'main': 'dev';
  
   useEffect(() => {
     const fetchData = async () => {
