@@ -12,4 +12,4 @@ This release is updated every time there is a push to main.
 ### Release
 [https://dojo.compasslabs.ai/](https://dojo.compasslabs.ai/).  
 This is the user-facing release.  
-It is only updated if you manually create a new code release on GitHub.
+It is only updated if you manually create a new code release on GitHub
