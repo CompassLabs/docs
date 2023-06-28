@@ -17,6 +17,8 @@ jobs:
   create:
     name: Create release build
     runs-on: ubuntu-latest
+    env:
+      BRANCH: main
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
