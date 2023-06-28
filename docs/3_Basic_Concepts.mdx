@@ -11,7 +11,7 @@ import ImgGeneral from '../static/img/env4.png';
 import ImgLoop from '../static/img/env3.png';
 
 
-`dojo's` simulation loop combines principles from [reinforcement learning](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html#key-concepts-and-terminology) and [agent-based modelling](https://en.wikipedia.org/wiki/Agent-based_model). This flexible framework enables you to simulate and explore a diverse range of scenarios that reflect DeFi dynamics.   
+`dojo` runs a simulation loop, combining principles from [reinforcement learning](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html#key-concepts-and-terminology) and [agent-based modelling](https://en.wikipedia.org/wiki/Agent-based_model). This flexible framework enables you to simulate and explore a diverse range of scenarios that reflect DeFi dynamics.   
 
 The schematic below shows the simplified representation of the agent-environment loop. 
 
@@ -21,13 +21,13 @@ The schematic below shows the simplified representation of the agent-environment
 To make things easier, let’s consider an example of a trader trading on UniswapV3:  
 
 1. **Environment creation**: as a first step in the simulation, an environment is created. In this case UniswapV3.  
-2. **Reset environment**: After initialising the environment, it’s reset to get the first observation from the environment. Observations can be things 
-like `block number`, `pool tokens`, `pool token prices`, etc.   
-3. **Run policies**: These obervations are turned into actions via your policies (strategies). Think of a trader submitting a trade based on the current price in a pool.  
-4. **Process actions**: The environment executes these actions on the forked-blockchain. This can be imagined as Uniswap processing the trader's trade. 
+2. **Reset environment**: the environment is reset to get the first observation from the environment. Observations provide information on the
+state of the environment. For example, the trader might query the current price in a pool.
+3. **Run policies**: these obervations are turned into actions via your policies. Think of the trader submitting a trade based on the current price in a pool.  
+4. **Process actions**: the environment executes these actions on the forked-blockchain. This can be imagined as Uniswap processing the trader's trade. 
 The observations change and the agents compute their rewards for taking their actions.
 
-`dojo` can handle this reward for different scenarios: 
+The agent rewards are useful in two cases: [static policy performance](./Basic_Concepts#static-policy-performance) and [optimizing a policy](./Basic_Concepts#optimizing-a-policy).
 
 
 ## Static policy performance 

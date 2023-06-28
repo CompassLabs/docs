@@ -41,14 +41,12 @@ Actions are the means through which the agent interacts with the environment to 
 Depending on whether you are testing or training, through the learning process, the agent can refine the action
 strategy and leverage feedback from the environment in the form of the reward to gradually improve decision-making.
 
-In general, there are 3 actions you can perform on the Uniswap V3 environment:
+In general, there are 4 actions you can perform on the Uniswap V3 environment:
 
-- **TRADE**
-  - Trading one token for another token, without changing your invested liquidity
-- **QUOTE**
-  - Either providing or taking liquidity out of the pool
-- **COLLECT**
-  - Collect LP fees from an LP position
+- **TRADE**: trading one token for another token, without changing your invested liquidity
+- **QUOTE**: either providing or taking liquidity out of the pool
+- **COLLECT**: collect LP fees from an LP position
+- **SET FEE PROTOCOL**: set the protocol fee of a pool
 
 Please refer to the [code reference](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Action) for more details.
 
