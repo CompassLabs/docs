@@ -8,12 +8,12 @@ import CodeBlock from '../src/components/CodeBlock';
 # Simulation Loop
 
 The simulation loop in dojo brings everything together through an iterative process on a **per block basis**.  
-At each step, the agent interacts with the environment by taking actions, receiving observations and rewards, and updating the agent & environment state. 
+At each step, the environment emits an observation 🔎 and the agents' rewards 🥇. These are processed by the policy which generates a sequence of actions 🕺. This is passed to the environment, which emits a new observation reflecting the new state of the protocol, and the agents' rewards for taking those actions.
 
 <img src={ImgGeneral} alt="aasd" width="40%" />
 
 
-**This is the basic pattern of the simulation loop:**
+**This is the basic pattern of the simulation loop 🔄:**
 
 <!-- <details><summary> 1. <b>Resetting</b> the environment to its initial state and returning the initial observation </summary><p>
 
@@ -41,7 +41,7 @@ print("hello world!")
 If you want a reminder on some of the concepts here, take a longer peek at the [environment](./environments/UniswapV3#show-me-the-code), the [agent](./Agents#creating-your-own-agent) or the [policy](./Policies#training) as you see fit 🙂
 
 
-## Example
+## 🧑‍💻 Example
 
 <CodeBlock file="run.py" snippet_name={"1"}/>
 

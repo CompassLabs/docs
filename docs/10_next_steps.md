@@ -12,14 +12,14 @@ If you liked the intro and want to play around with dojo, please do [get in touc
 
 As next steps we suggest:
 
-### Check out our example repository
+### 🧑‍💻 Check out our example repository
 
 We have a [public repo with working examples](https://github.com/CompassLabs/dojo_examples). This includes
 - **Multiple Demo Policies:** e.g. Moving Average or Passive concentraded liquidity
 - **Different Agents:** e.g. an agent that tracks impermanent loss
 - **Full simulation loop:** e.g. Stiching it all together. Run these demos to run simulations, track the data and plot the results.
 
-### Implement your own policies
+### 🧑‍💻 Implement your own policies
 
 Try to implement your own policy and test the results.
 

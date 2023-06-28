@@ -7,7 +7,7 @@ import CodeBlock from '../src/components/CodeBlock';
 
 # Visualization
 
-Dojo provides an interactive simulation dashboard to visualize your runs.
+Dojo provides an interactive simulation dashboard to visualize your runs 👓.
 
 You can launch the simulation dashboard with separate Python script like this:
 <CodeBlock file="start_dashboard.py" snippet_name={"1"}/>
@@ -20,5 +20,5 @@ Now, when you use on of our runners, specify the same port:
 sim_blocks, sim_rewards = backtest_run(env, [demo_policy], port=8051)
 ```
 
-Here's a screenshot of the dashboard.  
+Here's a screenshot of the dashboard 📸
 ![](/img/simulation_full.png)
