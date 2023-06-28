@@ -12,6 +12,10 @@ const katex = require('rehype-katex');
 const config = {
   title: 'dojo',
   tagline: 'An end-to-end DeFi research platform.', //an end-to-end DeFi research platform
+  customFields: {
+    // Put your custom environment here
+    branch: process.env.BRANCH,
+  },
   favicon: 'img/compass_logo.svg',
   markdown: {
     mermaid: true,

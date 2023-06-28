@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import CB from '@theme/CodeBlock';
 
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 interface Props {
   file: string;
   snippet_name: string;
@@ -11,8 +13,12 @@ export default function CodeBlock(props: Props): JSX.Element {
   const [code, setCode] = useState("code");
   const [link, setLink] = useState("link");
 
-  const branch= process.env.BRANCH ? process.env.BRANCH: 'dev';
+  const {
+    siteConfig: {customFields},
+  } = useDocusaurusContext();
 
+  const branch= customFields.branch ? customFields.branch: 'dev';
+ 
   useEffect(() => {
     const fetchData = async () => {
       
