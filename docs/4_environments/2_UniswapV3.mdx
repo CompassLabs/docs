@@ -21,8 +21,8 @@ At the moment, we support the following pools.
  - USDC/ETH 0.3%: [0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8](https://info.uniswap.org/#/pools/0x8ad599c3a0ff1de082011efddc58f1908eb6e6)
  - WBTC/ETH 0.3% [0xcbcdf9626bc03e24f779434178a73a0b4bad62ed](https://info.uniswap.org/#/pools/0xcbcdf9626bc03e24f779434178a73a0b4bad62ed)
 
-:::note
-We are working on an on-demand dataloader, enabling you to work with any pool you'd like.
+:::success
+If you want to do a simulation outside of these pools, you can implement your own dataloader [here](../Dataloaders)
 :::
 
 
@@ -32,7 +32,7 @@ An observation refers to the information that the agent receives from the enviro
 Think of the current price, or the amount of liquidity in the pool.  
 Since UniswapV3 is based on tick ranges, many observations are on a per tick basis.  
 
-The methods within UniV3Obs can be found [here](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Obs).
+The methods within `UniV3Obs` can be found [here](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Obs).
 
 
 ## Actions
@@ -41,14 +41,12 @@ Actions are the means through which the agent interacts with the environment to 
 Depending on whether you are testing or training, through the learning process, the agent can refine the action
 strategy and leverage feedback from the environment in the form of the reward to gradually improve decision-making.
 
-In general, there are 3 actions you can perform on the Uniswap V3 environment:
+In general, there are 4 actions you can perform on the Uniswap V3 environment:
 
-- **TRADE**
-  - Trading one token for another token, without changing your invested liquidity
-- **QUOTE**
-  - Either providing or taking liquidity out of the pool
-- **COLLECT**
-  - Collect LP fees from an LP position
+- **TRADE**: trading one token for another token, without changing your invested liquidity
+- **QUOTE**: either providing or taking liquidity out of the pool
+- **COLLECT**: collect LP fees from an LP position
+- **SET FEE PROTOCOL**: set the protocol fee of a pool
 
 Please refer to the [code reference](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Action) for more details.
 

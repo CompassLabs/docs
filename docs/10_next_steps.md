@@ -1,20 +1,20 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 title: Next Steps
 ---
 
-# Congratulations!
+# Congratulations 🎉🎉
 
-You've made it!  
+That's all we have for you for now 🙂
 
 
-If you liked the intro and want to play around with dojo, please [get in touch](mailto:elisabeth@compasslabs.ai?subject=dojo%20trial%20license%20request&body=%3C%20Please%20let%20us%20know%20your%20name%20and%20the%20company%20you%20represent.%20We'll%20get%20back%20ASAP%20%3E).
+If you liked the intro and want to play around with dojo, please do [get in touch](mailto:elisabeth@compasslabs.ai?subject=dojo%20trial%20license%20request&body=%3C%20Please%20let%20us%20know%20your%20name%20and%20the%20company%20you%20represent.%20We'll%20get%20back%20ASAP%20%3E)!
 
-As next steps we suggest
+As next steps we suggest:
 
 ### Check out our example repository
 
-We have a [repo with working examples](https://github.com/CompassLabs/dojo_examples). This includes
+We have a [public repo with working examples](https://github.com/CompassLabs/dojo_examples). This includes
 - **Multiple Demo Policies:** e.g. Moving Average or Passive concentraded liquidity
 - **Different Agents:** e.g. an agent that tracks impermanent loss
 - **Full simulation loop:** e.g. Stiching it all together. Run these demos to run simulations, track the data and plot the results.

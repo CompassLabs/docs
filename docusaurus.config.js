@@ -50,7 +50,7 @@ const config = {
 
   plugins: [
     [
-      "docusaurus2-dotenv",
+      "docusaurus-plugin-dotenv",
       {
         systemvars: true,
       },
