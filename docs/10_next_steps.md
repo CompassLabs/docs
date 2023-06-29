@@ -15,9 +15,9 @@ As next steps we suggest:
 ### 🧑‍💻 Check out our example repository
 
 We have a [public repo with working examples](https://github.com/CompassLabs/dojo_examples). This includes
-- **Multiple Demo Policies:** e.g. Moving Average or Passive concentraded liquidity
-- **Different Agents:** e.g. an agent that tracks impermanent loss
-- **Full simulation loop:** e.g. Stiching it all together. Run these demos to run simulations, track the data and plot the results.
+- **Multiple Demo Policies:** e.g. Moving Average or Passive concentrated liquidity.
+- **Different Agents:** e.g. an agent that tracks impermanent loss.
+- **Full simulation loop:** e.g. Stitching it all together. Run these demos to run simulations, track the data and plot the results.
 
 ### 🧑‍💻 Implement your own policies
 
