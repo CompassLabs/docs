@@ -7,6 +7,10 @@ import CodeBlock from '../src/components/CodeBlock';
 
 # Visualization
 
+:::info
+The `dojo.runners` module is still in beta, and currently only works with `UniV3Env` environmnets with agents implementing the `lp_portfolio()` method found **[here](https://github.com/CompassLabs/dojo_examples/blob/main/agents/uniV3_pool_wealth.py#L16)** ⚠️
+:::
+
 Dojo provides an interactive simulation dashboard to visualize your runs 👓.
 
 You can launch the simulation dashboard with separate Python script like this:
