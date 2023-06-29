@@ -15,7 +15,7 @@ You can launch the simulation dashboard with separate Python script like this:
 Note that in this case the dashboard has been launched on port 8051. If you run multiple simulations at the same time, each dashboard must run on its own port.
 
 
-Now, when you use on of our runners, specify the same port:
+Now, when you use one of our runners, specify the same port:
 ```python
 sim_blocks, sim_rewards = backtest_run(env, [demo_policy], port=8051)
 ```

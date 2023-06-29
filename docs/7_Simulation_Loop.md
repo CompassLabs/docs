@@ -28,10 +28,10 @@ print("hello world!")
 
 
 1. Firstly, the environment emits an initial observation to the agent, which represents the state of the  environment.
-2. Then the agent takes in the observations and makes desicions based on its policy. It also computes it's reward based on observations.
-3. If you are testing your strategy, this reward is simply a way of measuring your strategy performance
+2. Then the agent takes in the observations and makes decisions based on its policy. It also computes it's reward based on observations.
+3. If you are testing your strategy, this reward is simply a way of measuring your strategy performance.
 4. If you are training your strategy, the agent takes the reward function to optimize parameters based on the state-action-reward transition.
-5. The environment executed the actions and moved forward in time to the next block
+5. The environment executes the actions and moves forward in time to the next block.
 6. At each step in the loop, a termination condition is checked. This condition could be a terminal state, in this case, for example when the agent runs out of money. 
 7. The simulation loop keeps repeating this cycle until a predefined stopping condition is met. 
 
