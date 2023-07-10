@@ -112,7 +112,7 @@ const config = {
         title: 'dojo',
         logo: {
           alt: 'CompassLabs Logo',
-          src: 'https://compasslabs.ai/assets/images/image12.svg?v=4662781b',
+          src: '/img/compass_logo.png',
         },
         items: [
           {
