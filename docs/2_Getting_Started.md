@@ -17,10 +17,7 @@ The trial license is only valid for a couple of weeks on a single machine, but h
 There's a few more things you need to set up for `dojo`. If you've done some coding in web3 before, chances are you're good to go already!
 
 1. **RPC Node provider**: setup an account with a provider, such as [Infura](https://www.infura.io/), or use your own **archive node**. You'll need the RPC_URL it provides. e.g. `https://mainnet.infura.io/v3/ac8ee<...>961`
-2. **A local ethereum development environment**: we suggest Hardhat
-  ```
-  npm install --save-dev hardhat
-  ```
+2. **A local ethereum development environment**: we recently switched from [hardhat](https://hardhat.org/) to [anvil](https://github.com/foundry-rs/foundry). Check out the installation guide [here](https://book.getfoundry.sh/getting-started/installation).
 
 ## 🏃 Setup
 
