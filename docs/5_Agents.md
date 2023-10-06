@@ -22,23 +22,22 @@ The base class implements some pre-existing metrics tracking functionality:
 - `erc20_portfolio() -> Portfolio`: get the agent portfolio of ERC20 tokens, e.g. `{USDC: 1000}`.
 - `erc721_portfolio() -> Dict[str, list]`: get the agent portfolio of ERC721 NFTs, e.g. `{"UNI-V3-POS": [251300]}`.
 - `done() -> bool`: get whether the agent is done or not, defaults to done if the agent goes broke.
-- `wealth(date: datetime) -> float`: get the agent wealth in $ (based on Binance).
-- `erc20_wealth(date: datetime) -> float`: get the agent wealth of ERC20 tokens owned in $ (based on Binance).
 - `reward(obs: BaseObs) -> float`: user defined reward metric
 ---
 ## 🧑‍💻 Creating your own agent
 
 Here is a basic demo for creating your own agent, you just need to implement your reward function!
 ```python
+from decimal import Decimal
 from dojo.agents import BaseAgent
 from dojo.environments.uniswapV3 import UniV3Obs
 
 class ETHAgent(BaseAgent):
-    def __init__(self, initial_portfolio: Portfolio = {"USDC": 10_000}) -> None:
+    def __init__(self, initial_portfolio: Portfolio = {"USDC": Decimal(10_000)}) -> None:
         super().__init__(initial_portfolio=initial_portfolio)
 
     def reward(obs: UniV3Obs) -> float:
-        return self.quantity("ETH")
+        return float(self.quantity("ETH"))
 ```
 
 ---

@@ -4,6 +4,10 @@ sidebar_position: 2
 
 # Getting Started
 
+:::warning warning
+`dojo` does **not** currently support Windows!!
+:::
+
 Let's discover `dojo` in **3 simple steps** 🏎️
 
 ## 📄 Licensing

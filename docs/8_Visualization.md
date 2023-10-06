@@ -3,13 +3,11 @@ sidebar_position: 8
 ---
 
 :::info
-The `dojo.runners` module is still in beta, and currently only works with `UniV3Env` environments with a single agent ⚠️
+The `dojo.vis` module is still in beta, and currently only works with `UniV3Env` environments with a single pool ⚠️
 :::
 
 import ImgGeneral from '../static/img/env4.png';
 import CodeBlock from '../src/components/CodeBlock';
-
-# Visualization
 
 ## Dojo simulation dashboard
 
