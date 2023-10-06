@@ -17,8 +17,8 @@
   --ifm-color-primary-lightest: #FF0000;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-    background-image: url("/static/img/background_tiles.svg");
-    background-size: contain;
+  background: linear-gradient(0deg, #dddddd 0%, #ffffff 100%);
+  background-attachment: fixed;
     /* --ifm-font-color-base: #000; */
   font-family: Quicksand;
 }
