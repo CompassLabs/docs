@@ -5,7 +5,7 @@ sidebar_position: 1
 # Overview
 
 Environments in `dojo` are representations of different DeFi protocols agents can interact with.
-We currently support [UniswapV3 🦄](./UniswapV3) and are working hard to launch [BalancerV2 ⚖️](./BalancerV2) support soon.
+We currently support [UniswapV3 🦄](./UniswapV3) and are working hard to launch [AAVE 👻](https://twitter.com/EDuijnstee/status/1709877207047266657) support soon.
 
 ## ⛏️ Purpose
 Environments generally provide the following functionality: 
@@ -19,24 +19,6 @@ Each environment module contains information on the observations, actions and en
 from dojo.environments.uniswapV3 import UniV3Obs, UniV3Action, UniV3Env
 ```
 
-
-<!-- Let’s go through a dojo use-case of a trader trading on a UniswapV3 pool, who wants to measure its wealth generated over time: 
-
-
-At every block (= simulation step) Uniswap (=environment) emits protocol information such as the pool’s tokens, the pool’s trading fees and the pool’s token prices (= observations), as well as its wealth generated (=reward) by the trade (= action) to the trader (=agent). The trader’s strategy can process those observations and rewards to decide on what trade to make next. 
-
-
-```python
-from dojo.environments.uniswapV3 import UniV3Obs, UniV3Action, UniV3Env
-``` -->
-
-<!-- ## Market Impact
-
-Market impact describes how your policy actions will affect the behavior of the other agents in the simulation.  
-For example, while you can backtest on historical trade data, if you make significant actions on the exchange during the simulation, the market would likely have reacted to your actions.  
-
-Each environment in `dojo` allows you to select different market impact models for your simulation.  -->
-
 :::info
-We are working on incorporating market impact models. Right now, the simulation simply replays the historic transactions.
+We are working on incorporating more complicated market impact models. Right now, the simulation simply replays the historic transactions.
 :::

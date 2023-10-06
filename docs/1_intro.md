@@ -53,7 +53,7 @@ Transfer your strategy from the Dojo fork to mainnet without any modifications, 
 
 ___
 ##  ⬇️ Protocol integrations
-`dojo` currently integrates with **UniswapV3** on **Ethereum**. We are soon integrating BalancerV2 and are enabling simulation on Polygon and Arbitrum.  
+`dojo` currently integrates with **UniswapV3** on **Ethereum**. We are soon integrating AAVE and are enabling simulation on Polygon and Arbitrum.  
 If you want your chain or protocol to be integrated with `dojo`, [reach out](mailto:elisabeth@compasslabs.ai)! 
 
 
