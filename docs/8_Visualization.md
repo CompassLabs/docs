@@ -35,7 +35,7 @@ sim_blocks, sim_rewards = backtest_run(env, [demo_policy], port=8051)
 </details>
 
 
-### Jupyter notebook support
+<!-- ### Jupyter notebook support
 
 The simulation dashboard works in jupyter as well.  
 
@@ -47,5 +47,5 @@ To launch within Jupyter, add `jupyter=True` to the arguments of `run_app`:
 
 ![](/img/jupyter_dashboard.png)
 
-</details>
+</details> -->
 
