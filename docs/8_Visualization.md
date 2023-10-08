@@ -15,7 +15,7 @@ import CodeBlock from '../src/components/CodeBlock';
 
 Dojo provides an interactive simulation dashboard to visualize your runs 👓.
 
-You can launch the simulation dashboard with separate Python script like this:
+You can launch the simulation dashboard with a separate Python script like this:
 <CodeBlock file="start_dashboard.py" snippet_name={"1"}/>
 
 Note that in this case the dashboard has been launched on port `8051`. If you run multiple simulations at the same time, each dashboard must run on its own port.
