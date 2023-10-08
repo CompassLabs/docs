@@ -11,7 +11,7 @@ Agents serve two main purposes in `dojo`.
 
 
 :::note
-Agents are NOT responsible for making decisions on how to act in the environment. That is the job of the Policies.
+Agents are NOT responsible for making decisions on how to act in the environment. That is the job of the policies.
 :::
 ---
 ## 🎥 In-built metrics tracking
