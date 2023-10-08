@@ -8,6 +8,13 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #FF67C3;
+  --ifm-color-info-contrast-background: #6bd5e315;
+  --ifm-color-info-dark: #6BD6E3;
+
+  --ifm-color-success-contrast-background: #ff67c215;
+  --ifm-color-success-dark: #FF67C3;
+
+
   /* --ifm-color-primary: #ffffff00; */
   --ifm-color-primary-dark: #FF67C3;
   --ifm-color-primary-darker: #6BD6E3;
@@ -67,4 +74,20 @@ table, th, td {
 .navbar__link {
   color: var(--ifm-navbar-link-color);
   font-weight: bold;
+}
+
+h1, h2, h3 {
+  /* text-shadow: 2px 2px #1e1c2d15; */
+  color: #1e1c2d;
+}
+
+.hero__title {
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #1e1c2d7b;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid #1e1c2d7b;
 }

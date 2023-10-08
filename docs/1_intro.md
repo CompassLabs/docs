@@ -18,23 +18,23 @@ sidebar_position: 1
 *Dojo is derived from the Japanese words representing immersive learning, and we believe that our solution captures the essence of this concept* ✨
 
 
-## ✅ Features
-### ✅ Runs at smart-contract level
+## <icon icon="square-check" size="m" color="#1e1c2d"/> Features
+### <icon icon="square-check" size="lg" color="#1e1c2d"/> Runs at smart-contract level
    - `dojo` forks the actual blockchain and runs on the same smart contracts that would be run in real life.
    - This eliminates concerns about bugs in the model or missed assumptions about the protocol, and enables capturing micro-effects that impact simulation results, such as precision and rounding.
  
-### ✅ Runs locally on your machine
+### <icon icon="square-check" size="lg" color="#1e1c2d"/> Runs locally on your machine
    - `dojo` operates fully on your local machine.
    - There is no sharing of information about your strategies or simulations with us or any other party.
  
-### ✅ Simple Python interface
+### <icon icon="square-check" size="lg" color="#1e1c2d"/> Simple Python interface
    - `dojo's` interface allows full experimentation with strategies using Python.
    - Take advantage of Python's rich ecosystem of tools for data analysis and visualisation.
  
-### ✅ Transaction ordering
+### <icon icon="square-check" size="lg" color="#1e1c2d"/> Transaction ordering
    - Directly edit the order of transaction execution for simulating various MEV scenarios.
 
-### ✅ Custom data integration
+### <icon icon="square-check" size="lg" color="#1e1c2d"/> Custom data integration
    - `dojo` sources it's own protocol events data for a subset of environments.
    - For environments we don't natively support, you can load in your existing datasets.
 
