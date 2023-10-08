@@ -21,11 +21,12 @@ The schematic below shows the simplified representation of the agent-environment
 
 To make things easier, let’s consider an example of a trader trading on Uniswap V3 🦄🦄🦄:  
 
-1. 🐣 **Environment creation**: as a first step in the simulation, an environment is created. In this case UniswapV3.  
-2. ⏮️ **Reset environment**: the environment is reset to get the first observation from the environment. Observations provide information on the
-state of the environment. For example, the trader might query the current price in a pool.
-3. 🏋️ **Run policies**: these obervations are turned into actions via your policies. Think of the trader submitting a trade based on the current price in a pool.  
-4. ⏯️ **Process actions**: the environment executes these actions on the forked-blockchain. This can be imagined as Uniswap processing the trader's trade. 
+1. 🐣 **Environment creation**: as a first step in the simulation, an environment is created. In this case UniswapV3. An environment can have one or more pools.
+2. 🕵️ **Agent creation**:  you can define agents that are acting upon the environment. Crucially, you'll have to define a `reward function` for the agent, mapping the `pool observations` to a single value measuring the agent success.
+3. 🏃 **Run policies**: Observations provide information on the
+state of the environment. these obervations are turned into actions via your `policies`. 
+Think of the trader submitting a trade based on the current price in a pool.  
+4. ⏯️ **Process actions**: the environment executes these actions on the blockchain. This can be imagined as Uniswap processing the trader's trade. 
 The observations change and the agents compute their rewards for taking their actions.
 
 The agent rewards are useful in two cases: [static policy performance](./Basic_Concepts#-static-policy-performance) and [optimizing a policy](./Basic_Concepts#-optimizing-a-policy).
