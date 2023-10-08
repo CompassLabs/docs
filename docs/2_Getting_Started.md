@@ -27,15 +27,19 @@ There's a few more things you need to set up for `dojo`. If you've done some cod
 
 Setting up `dojo` shouldn't take more than **5 minutes**:
 
-### 1️⃣ Install
+### 1️⃣ Install dojo
 `dojo` is provided as a Python package on PyPi.
 To install, simply run  
 ```
 pip install dojo-compass
 ```
 
+### 2️⃣ Install anvil
+Dojo requires [anvil](https://book.getfoundry.sh/anvil/) as EVM. It's what's going to process the raw transactions on your local machine.  
+Installing it is simple. Just follow the instructions [here](https://book.getfoundry.sh/getting-started/installation).
 
-### 2️⃣ Setup configuration
+
+### 3️⃣ Setup configuration
 Create a `.env` file in your main directory, or export the environment variables:
 ```md title=".env" {1-4}
 RPC_URL=<YOUR URL>
@@ -43,7 +47,7 @@ CHAIN=<chain> # for now only supports "ethereum"
 LICENSE_KEY=<YOUR LICENSE KEY>
 ```
 
-### 3️⃣ Verify install
+### 4️⃣ Verify install
 If everything is set up correctly, the following command should throw no erros.
 ```
  python -c "from dojo.environments import UniV3Env"
