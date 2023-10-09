@@ -12,6 +12,10 @@ const katex = require('rehype-katex');
 const config = {
   title: 'dojo',
   tagline: 'An end-to-end DeFi research platform.', //an end-to-end DeFi research platform
+  customFields: {
+    // Put your custom environment here
+    branch: process.env.BRANCH,
+  },
   favicon: 'img/compass_logo.svg',
   markdown: {
     mermaid: true,
@@ -19,10 +23,10 @@ const config = {
   themes: ['@docusaurus/theme-mermaid'],
 
   // Set the production url of your site here
-  url: 'https://compasslabs.github.io',
+  url: 'https://github.com/CompassLabs/dojo_examples',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs',
+  baseUrl: '/',
 
 
 
@@ -33,7 +37,7 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -43,6 +47,15 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  plugins: [
+    [
+      "docusaurus-plugin-dotenv",
+      {
+        systemvars: true,
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -99,7 +112,7 @@ const config = {
         title: 'dojo',
         logo: {
           alt: 'CompassLabs Logo',
-          src: 'https://compasslabs.ai/assets/images/image12.svg?v=4662781b',
+          src: '/img/compass_logo.png',
         },
         items: [
           {
@@ -128,7 +141,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/tutorial/intro',
+                to: '/tutorial/intro',
               },
               {
                 label: 'Code reference',

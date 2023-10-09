@@ -4,55 +4,50 @@ sidebar_position: 2
 import CodeBlock from '../../src/components/CodeBlock';
 
 # UniswapV3
-You can imort the UniswapV3 environment by 
+You can import the UniswapV3 🦄🦄🦄 environment by running:
 ```python
 from dojo.environments import UniV3Env
 ```
 
 :::tip
-It is recommended to read the [whitepaper](https://uniswap.org/whitepaper-v3.pdf) if the concept of an automated market maker or conecentrated liquidity is unclear.
+It is recommended to read the [whitepaper](https://uniswap.org/whitepaper-v3.pdf) if the concept of an automated market maker or concentrated liquidity is unclear.
 :::
 
-## Supported Pools
-At the moment, we support the following pools. 
+## 🌊 Supported Pools
+At the moment, we natively have data for the following pools:
 
- - DAI/USDC 0.01%: [0x5777d92f208679db4b9778590fa3cab3ac9e2168](https://info.uniswap.org/#/pools/0x5777d92f208679db4b9778590fa3cab3ac9e2168)
- - USDC/ETH 0.05%: [0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640](https://info.uniswap.org/#/pools/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640)
- - USDC/ETH 0.3%: [0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8](https://info.uniswap.org/#/pools/0x8ad599c3a0ff1de082011efddc58f1908eb6e6)
- - WBTC/ETH 0.3% [0xcbcdf9626bc03e24f779434178a73a0b4bad62ed](https://info.uniswap.org/#/pools/0xcbcdf9626bc03e24f779434178a73a0b4bad62ed)
+ - [DAI/USDC 0.01%](https://info.uniswap.org/#/pools/0x5777d92f208679db4b9778590fa3cab3ac9e2168)
+ - [USDC/ETH 0.05%](https://info.uniswap.org/#/pools/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640)
+ - [USDC/ETH 0.3%](https://info.uniswap.org/#/pools/0x8ad599c3a0ff1de082011efddc58f1908eb6e6)
+ - [WBTC/ETH 0.3%](https://info.uniswap.org/#/pools/0xcbcdf9626bc03e24f779434178a73a0b4bad62ed)
 
-:::note
-We are working on an on-demand dataloader, enabling you to work with any pool you'd like.
+:::success
+If you want to do a **simulation outside of these pools**, you can implement your own dataloader **[here](../Dataloaders)**.
 :::
 
 
-## Observations
+## 🔎 Observations
 
-An observation refers to the information that the agent receives from the environment at every timestep.
-Think of the current price, or the amount of liquidity in the pool.  
-Since UniswapV3 is based on tick ranges, many observations are on a per tick basis.  
+An observation refers to the information that the agent receives from the environment at every block.
+Think of the current price 💸, or the liquidity 💧 in the pool.
 
-The methods within UniV3Obs can be found [here](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Obs).
-
-
-## Actions
-
-Actions are the means through which the agent interacts with the environment to achieve investment goals.  
-Depending on whether you are testing or training, through the learning process, the agent can refine the action
-strategy and leverage feedback from the environment in the form of the reward to gradually improve decision-making.
-
-In general, there are 3 actions you can perform on the Uniswap V3 environment:
-
-- **TRADE**
-  - Trading one token for another token, without changing your invested liquidity
-- **QUOTE**
-  - Either providing or taking liquidity out of the pool
-- **COLLECT**
-  - Collect LP fees from an LP position
-
-Please refer to the [code reference](https://readthedocs.compasslabs.ai/dojo.environments.html#dojo.environments.uniswapV3.UniV3Action) for more details.
+The methods within `UniV3Obs` can be found [here](https://readthedocs.compasslabs.ai/dojo.observations.html#dojo.observations.UniV3Obs).
 
 
-## Example
+## 🕺 Actions
 
-<CodeBlock url="https://github.com/CompassLabs/dojo_examples/blob/main/snippets/uniswapv3_doaction.py" snippet_name={"1"}/>
+Actions are the means through which the agent interacts with the environment to achieve goals.  
+
+In general, there are 4 actions you can perform on the Uniswap V3 environment:
+
+- **TRADE**: trading one token for another token, without changing your invested liquidity
+- **QUOTE**: either providing or taking liquidity out of the pool
+- **COLLECT**: collect LP fees from an LP position
+- **SET FEE PROTOCOL**: set the protocol fee of a pool
+
+Please refer to the [code reference](https://readthedocs.compasslabs.ai/dojo.actions.html) for more details.
+
+
+## 🧑‍💻 Example
+
+<CodeBlock file="snippets/uniswapv3_doaction.py" snippet_name={"1"}/>

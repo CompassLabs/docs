@@ -1,41 +1,15 @@
-# Website
+## AWS Amplify
+[https://us-east-1.console.aws.amazon.com/amplify/home?region=us-east-1#/dg68s1zz5zfuo](https://us-east-1.console.aws.amazon.com/amplify/home?region=us-east-1#/dg68s1zz5zfuo)
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+## Deployments
 
-```
-$ yarn
-```
+### Dev
+[https://build-dev.dg68s1zz5zfuo.amplifyapp.com](https://build-dev.dg68s1zz5zfuo.amplifyapp.com).  
+This release is updated every time there is a push to main.
 
-### Local Development
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+### Release
+[https://dojo.compasslabs.ai/](https://dojo.compasslabs.ai/).  
+This is the user-facing release.  
+It is only updated if you manually create a new code release on GitHub
