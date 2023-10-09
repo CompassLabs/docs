@@ -17,25 +17,29 @@ You will need a **license key** to run `dojo`. To get started, you can request a
 The trial license is only valid for a couple of weeks on a single machine, but hopefully it's enough to get you excited about `dojo` 🥳
 :::
 
-## 🎬 Prerequisites
+<!-- ## 🎬 Prerequisites
 There's a few more things you need to set up for `dojo`. If you've done some coding in web3 before, chances are you're good to go already!
 
 1. **RPC Node provider**: setup an account with a provider, such as [Infura](https://www.infura.io/), or use your own **archive node**. You'll need the RPC_URL it provides. e.g. `https://mainnet.infura.io/v3/ac8ee<...>961`
-2. **A local ethereum development environment**: we recently switched from [hardhat](https://hardhat.org/) to [anvil](https://github.com/foundry-rs/foundry). Check out the installation guide [here](https://book.getfoundry.sh/getting-started/installation).
+2. **A local ethereum development environment**: we recently switched from [hardhat](https://hardhat.org/) to [anvil](https://github.com/foundry-rs/foundry). Check out the installation guide [here](https://book.getfoundry.sh/getting-started/installation). -->
 
 ## 🏃 Setup
 
 Setting up `dojo` shouldn't take more than **5 minutes**:
 
-### 1️⃣ Install
+### 1️⃣ Install dojo
 `dojo` is provided as a Python package on PyPi.
 To install, simply run  
 ```
 pip install dojo-compass
 ```
 
+### 2️⃣ Install anvil
+Dojo requires [anvil](https://book.getfoundry.sh/anvil/) as EVM. It's what's going to process the raw transactions on your local machine.  
+Installing it is simple. Just follow the instructions [here](https://book.getfoundry.sh/getting-started/installation).
 
-### 2️⃣ Setup configuration
+
+### 3️⃣ Setup configuration
 Create a `.env` file in your main directory, or export the environment variables:
 ```md title=".env" {1-4}
 RPC_URL=<YOUR URL>
@@ -43,7 +47,10 @@ CHAIN=<chain> # for now only supports "ethereum"
 LICENSE_KEY=<YOUR LICENSE KEY>
 ```
 
-### 3️⃣ Verify install
+For `RPC_URL`, you'll need to provide an etherum archive node address. We recommend to setup an account with a provider, such as [Infura](https://www.infura.io/) and specify the RPC_URL it provides.  
+The archive node is only used to read the pool state at simulation start, but if you prefer, you can also setup your own node, of course.
+
+### 4️⃣ Verify install
 If everything is set up correctly, the following command should throw no erros.
 ```
  python -c "from dojo.environments import UniV3Env"
