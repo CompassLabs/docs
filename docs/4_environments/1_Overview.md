@@ -16,7 +16,7 @@ Environments generally provide the following functionality:
 Each environment module contains information on the observations, actions and environment object for that environment. For example, to get this information for UniswapV3: 
 
 ```python
-from dojo.environments.uniswapV3 import UniV3Obs, UniV3Action, UniV3Env
+from dojo.environments.uniswapV3 import UniV3Obs, UniV3Env
 ```
 
 :::info
