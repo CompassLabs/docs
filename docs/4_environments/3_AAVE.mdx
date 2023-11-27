@@ -1,0 +1,58 @@
+---
+sidebar_position: 3
+---
+import CodeBlock from '../../src/components/CodeBlock';
+
+# AaveV3
+
+You can import the AaveV3 👻 environment by running:
+```python
+from dojo.environments import AAVEv3Env
+```
+
+:::tip
+It is recommended to read the [whitepaper](https://github.com/aave/aave-v3-core/blob/master/techpaper/Aave_V3_Technical_Paper.pdf) first.
+:::
+
+## 🌊 Supported Tokens
+At the moment, we suport the following tokens:
+
+- Wrapped Bitcoin [WBTC](0x2260fac5e5542a773aa44fbcfedf7c193bc2c599)
+- Wrapped Ether [WETH](0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2)
+- USD Coin [USDC](0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48)
+- Tether USDT [WETH](0xdac17f958d2ee523a2206206994597c13d831ec7)
+- Chainlink [LINK](0x514910771af9ca656af840dff83e8264ecf986ca)
+- Dai Stablecoin [DAI](0x6b175474e89094c44da98b954eedeac495271d0f)
+- Aave Token [AAVE](0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9)
+- Uniswap Token [UNI](0x1f9840a85d5af5bf1d1762f925bdaddc4201f984)
+- Balancer [BAL](0xba100000625a3754423978a60c9317c58a424e3D)
+
+
+## 🔎 Observations
+
+An observation refers to the information that the agent receives from the environment at every block.  
+With AAAVE, the most interesting observation is probably a users [health factor](https://docs.aave.com/risk/asset-risk/risk-parameters#health-factor).
+
+The methods within `AaveV3Obs` can be found [here](https://readthedocs.compasslabs.ai/dojo.observations.html#dojo.observations.UniV3Obs).
+
+
+## 🕺 Actions
+
+Actions are the means through which the agent interacts with the environment to achieve goals.  
+
+In general, there are 4 actions you can perform on the Uniswap V3 environment:
+
+- **SUPPLY**: Supplying collateral.
+- **BORROW**: Borrowing a token from the pool.
+- **WITHDRAW**: Withdrawing collateral.
+- **REPAY**: Repay borrowed token.
+- **LIQUIDATION**: Execute a liquidation on a poistion that slipped below a health factor of 1.0.
+
+
+:::info
+At the moment, we don't yet support Flash Loans. 
+:::
+
+## 🧑‍💻 Example
+
+<CodeBlock file="snippets/aaveV3_doaction.py" snippet_name={"1"}/>

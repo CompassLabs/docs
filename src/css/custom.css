@@ -91,3 +91,12 @@ h1, h2, h3 {
   background-color: white;
   border: 1px solid #1e1c2d7b;
 }
+
+.test {
+  filter: sepia(1) saturate(100);
+}
+
+
+svg {
+  filter: drop-shadow(2px 2px 4px #1e1c2d );
+}
