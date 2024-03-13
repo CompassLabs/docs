@@ -4,8 +4,13 @@ sidebar_position: 2
 
 # Getting Started
 
-:::warning warning
-`dojo` does **not** currently support Windows!!
+:::note supported platforms
+
+We currently support **Linux(x86)** and **Mac(AppleSilicon)**.  
+You may be able to use dojo in Windows using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install), but we are not actively developing for it.  
+
+We aim to always support the latest version of **Python**. Currently we support **3.10+**.
+
 :::
 
 Let's discover `dojo` in **3 simple steps** 🏎️
