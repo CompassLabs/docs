@@ -21,7 +21,7 @@ from dojo.environments.uniswapV3 import UniV3Obs, UniV3Env
 
 ## "local" vs "forked" backend
 
-One flag you'll to specify when creating an environment is the `backend_type`. This is fairly critical, so let's take a closer look.
+One flag you'll to specify when creating an environment is the `backend_type`. Understanding the difference is critical to get **fast simulations**.
 
 ### tl;dr
 #### `backend_type = "forked"`
@@ -32,7 +32,7 @@ One flag you'll to specify when creating an environment is the `backend_type`. T
  - Runs much faster
 
 :::info
-Typically, you'd want to use the forked backend while you're still developing your strategies(on short simulation periods), and then switch to local backend for the actual backtest.
+Typically, you'd want to use the forked backend while you're still developing your strategies (on short simulation periods), and then switch to local backend for the actual backtest.
 :::
 
 ### How it works
@@ -45,3 +45,5 @@ If you think about the millions of transcations occuring in a typical backtest, 
 In the local backend, we run custom logic to instantiate what is basically a pruned archive node on your local machine.  
 The main insight here is that on simulation start, you already know what contracts and accounts are relevant.
 So, we create a local archive node for you, that has just these contracts and accounts, but for the purpose of the simulation is equivalent to a full archive node. **No communication to an outside RPC provider is required, thus it runs MUCH faster**.
+
+Of course, we do comprehensive CI/CD testing to ensure that the local backend is implemented correctly.
