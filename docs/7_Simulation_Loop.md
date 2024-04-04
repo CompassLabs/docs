@@ -51,5 +51,9 @@ This is a screenshot of our upcoming live-simulation dashboard.
 </p>
 
 ![](/img/simulation_full.png)
-
 </details>
+
+
+## Saving data
+For the moment, the most comprehensive way to store data is by also launching the dashboard.(Will will make that part standalon shortly).  
+The dashboard allows you to save all data in json-format on a per block basis. You can load it into an empty dashboard later, or read the JSON for further processing.
