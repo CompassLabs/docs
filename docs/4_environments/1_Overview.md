@@ -19,6 +19,31 @@ Each environment module contains information on the observations, actions and en
 from dojo.environments.uniswapV3 import UniV3Obs, UniV3Env
 ```
 
+## "local" vs "forked" backend
+
+One flag you'll to specify when creating an environment is the `backend_type`. Understanding the difference is critical to get **fast simulations**.
+
+### tl;dr
+#### `backend_type = "forked"`
+ - Quick to start-up
+ - Slow to run
+#### `backend_type = "local"`
+ - Slow to start up(up to a few mins)
+ - Runs much faster
+
 :::info
-We are working on incorporating more complicated market impact models. Right now, the simulation simply replays the historic transactions.
+Typically, you'd want to use the forked backend while you're still developing your strategies (on short simulation periods), and then switch to local backend for the actual backtest.
 :::
+
+### How it works
+
+#### `backend_type = "forked"`
+This uses an RPC provider to create a forked chain using anvil. It happens almost instantenously, but at one big disadvantage: For every single transaction that is occuring, dojo needs to talk to the RPC provider.  
+So unless you have a full archive-node on the same machine as dojo is running on, communication over the internet is happening.  
+If you think about the millions of transcations occuring in a typical backtest, this will slow down the simulation massively.
+#### `backend_type = "local"`
+In the local backend, we run custom logic to instantiate what is basically a pruned archive node on your local machine.  
+The main insight here is that on simulation start, you already know what contracts and accounts are relevant.
+So, we create a local archive node for you, that has just these contracts and accounts, but for the purpose of the simulation is equivalent to a full archive node. **No communication to an outside RPC provider is required, thus it runs MUCH faster**.
+
+Of course, we do comprehensive CI/CD testing to ensure that the local backend is implemented correctly.
