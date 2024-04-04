@@ -33,7 +33,7 @@ from dojo.agents import BaseAgent
 from dojo.environments.uniswapV3 import UniV3Obs
 
 class ETHAgent(BaseAgent):
-    def __init__(self, initial_portfolio: Portfolio = {"USDC": Decimal(10_000)}) -> None:
+    def __init__(self, initial_portfolio: Portfolio = {"ETH": Decimal(10), "USDC": Decimal(10_000)}) -> None:
         super().__init__(initial_portfolio=initial_portfolio)
 
     def reward(obs: UniV3Obs) -> float:
