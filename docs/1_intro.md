@@ -19,22 +19,22 @@ sidebar_position: 1
 
 
 ## <icon icon="square-check" size="m" color="#1e1c2d"/> Features
-### <icon icon="square-check" size="lg" color="#1e1c2d"/> Runs at smart-contract level
+### <icon icon="square-check" size="m" color="#1e1c2d"/> Runs at smart-contract level
    - `dojo` forks the actual blockchain and runs on the same smart contracts that would be run in real life.
    - This eliminates concerns about bugs in the model or missed assumptions about the protocol, and enables capturing micro-effects that impact simulation results, such as precision and rounding.
  
-### <icon icon="square-check" size="lg" color="#1e1c2d"/> Runs locally on your machine
+### <icon icon="square-check" size="m" color="#1e1c2d"/> Runs locally on your machine
    - `dojo` operates fully on your local machine.
    - There is no sharing of information about your strategies or simulations with us or any other party.
  
-### <icon icon="square-check" size="lg" color="#1e1c2d"/> Simple Python interface
+### <icon icon="square-check" size="m" color="#1e1c2d"/> Simple Python interface
    - `dojo's` interface allows full experimentation with strategies using Python.
    - Take advantage of Python's rich ecosystem of tools for data analysis and visualisation.
  
-### <icon icon="square-check" size="lg" color="#1e1c2d"/> Transaction ordering
+### <icon icon="square-check" size="m" color="#1e1c2d"/> Transaction ordering
    - Directly edit the order of transaction execution for simulating various MEV scenarios.
 
-### <icon icon="square-check" size="lg" color="#1e1c2d"/> Custom data integration
+### <icon icon="square-check" size="m" color="#1e1c2d"/> Custom data integration
    - `dojo` sources it's own protocol events data for a subset of environments.
    - For environments we don't natively support, you can load in your existing datasets.
 
@@ -53,7 +53,8 @@ Transfer your strategy from the Dojo fork to mainnet without any modifications, 
 
 ___
 ##  ⬇️ Protocol integrations
-`dojo` currently integrates with **UniswapV3** on **Ethereum**. We are soon integrating AAVE and are enabling simulation on Polygon and Arbitrum.  
+`dojo` currently integrates with **UniswapV3** and **AAVEv3** on **Ethereum**.
+
 If you want your chain or protocol to be integrated with `dojo`, [reach out](mailto:elisabeth@compasslabs.ai)! 
 
 
