@@ -1,15 +1,18 @@
-## AWS Amplify
-[https://us-east-1.console.aws.amazon.com/amplify/home?region=us-east-1#/dg68s1zz5zfuo](https://us-east-1.console.aws.amazon.com/amplify/home?region=us-east-1#/dg68s1zz5zfuo)
+```mermaid
+flowchart TD
+    main[main]
+    release[🔒release]
+    main_website[/<a href='https://dojo.compasslabs.ai'>dojo.compasslabs.ai</a>/]
+    dev_website[/<a href='https://dev.dojo.compasslabs.ai'>dev.dojo.compasslabs.ai</a>/]
+    developer((Developer))
+    feature_branches[feature_branches]
 
+    main --> dev_website
+    release --> main_website
 
-## Deployments
+    main --> |merge into| release
+    feature_branches --> |merge into| main
 
-### Dev
-[https://build-dev.dg68s1zz5zfuo.amplifyapp.com](https://build-dev.dg68s1zz5zfuo.amplifyapp.com).  
-This release is updated every time there is a push to main.
-
-
-### Release
-[https://dojo.compasslabs.ai/](https://dojo.compasslabs.ai/).  
-This is the user-facing release.  
-It is only updated if you manually create a new code release on GitHub
+    developer --> |push| feature_branches
+    developer --> |push| main
+````

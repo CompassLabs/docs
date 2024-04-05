@@ -3,6 +3,6 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "A guide to the `dojo` environments."
+    "description": "Environments in dojo are representations of different DeFi protocols agents can interact with."
   }
 }
