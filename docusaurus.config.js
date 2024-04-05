@@ -72,13 +72,13 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/CompassLabs/docs/tree/main/blog',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/CompassLabs/docs/tree/main/blog',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
