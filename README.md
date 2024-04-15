@@ -1,3 +1,6 @@
+Build with [docusaurus](https://docusaurus.io/).
+
+
 ```mermaid
 flowchart TD
     main[main]
