@@ -3,53 +3,50 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
- @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #FF67C3;
+  --ifm-color-primary: #ff67c3;
   --ifm-color-info-contrast-background: #6bd5e315;
-  --ifm-color-info-dark: #6BD6E3;
+  --ifm-color-info-dark: #6bd6e3;
 
   --ifm-color-success-contrast-background: #ff67c215;
-  --ifm-color-success-dark: #FF67C3;
-
+  --ifm-color-success-dark: #ff67c3;
 
   /* --ifm-color-primary: #ffffff00; */
-  --ifm-color-primary-dark: #FF67C3;
-  --ifm-color-primary-darker: #6BD6E3;
-  --ifm-color-primary-darkest: #BE97D2;
-  --ifm-color-primary-light: #FF929C;
+  --ifm-color-primary-dark: #ff67c3;
+  --ifm-color-primary-darker: #6bd6e3;
+  --ifm-color-primary-darkest: #be97d2;
+  --ifm-color-primary-light: #ff929c;
   --ifm-color-primary-lighter: #e9e9e9;
-  --ifm-color-primary-lightest: #FF0000;
+  --ifm-color-primary-lightest: #ff0000;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   background: linear-gradient(0deg, #dddddd 0%, #ffffff 20%, #ffffff 100%);
   background-attachment: fixed;
-    /* --ifm-font-color-base: #000; */
+  /* --ifm-font-color-base: #000; */
   font-family: Quicksand;
   --ifm-menu-color: #000000;
-  --ifm-toc-link-color:  #000000;
+  --ifm-toc-link-color: #000000;
   --ifm-font-color-base: #000000;
-  
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #FFD75F;
-  --ifm-color-primary-dark: #FF67C3;
-  --ifm-color-primary-darker: #6BD6E3;
-  --ifm-color-primary-darkest: #BE97D2;
-  --ifm-color-primary-light: #FF929C;
+[data-theme="dark"] {
+  --ifm-color-primary: #ffd75f;
+  --ifm-color-primary-dark: #ff67c3;
+  --ifm-color-primary-darker: #6bd6e3;
+  --ifm-color-primary-darkest: #be97d2;
+  --ifm-color-primary-light: #ff929c;
   --ifm-color-primary-lighter: #e9e9e9;
-  --ifm-color-primary-lightest: #FFFFFF;
+  --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-footer-background-color: #1e1c2d;
 }
 
 .hero {
-  background: linear-gradient(90deg, #D9B2B2 0%, #96A9EB 100%)
-
+  background: linear-gradient(90deg, #d9b2b2 0%, #96a9eb 100%);
 }
 
 .center {
@@ -57,26 +54,29 @@
 }
 
 .img {
-  -webkit-filter:invert(100%);
-   filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+  -webkit-filter: invert(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(invert='1');
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid;
-  border-color: #FF67C3;
+  border-color: #ff67c3;
 }
 
 .footer--dark {
   background-color: #1e1c2d;
 }
 
-
 .navbar__link {
   color: var(--ifm-navbar-link-color);
   font-weight: bold;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   /* text-shadow: 2px 2px #1e1c2d15; */
   color: #1e1c2d;
 }
@@ -96,7 +96,6 @@ h1, h2, h3 {
   filter: sepia(1) saturate(100);
 }
 
-
 svg {
-  filter: drop-shadow(2px 2px 4px #1e1c2d );
+  filter: drop-shadow(2px 2px 4px #1e1c2d);
 }
